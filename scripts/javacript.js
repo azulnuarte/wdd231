@@ -1,68 +1,73 @@
-// Defer para que el script cargue después del HTML
-document.addEventListener("DOMContentLoaded", function() {
-    // Mostrar el año actual en el pie de página
-    const copyrightYear = new Date().getFullYear();
-    const copyrightElement = document.querySelector("footer p");
-    copyrightElement.innerHTML = `©${copyrightYear} 💙Azul Agustina Nuarte💙 Mendoza`;
+// Mostrar el año actual en el footer
+document.getElementById("copyright-year").textContent = new Date().getFullYear();
 
-    // Mostrar la fecha de la última modificación
-    const lastModified = document.lastModified;
-    const footerParagraph = document.createElement("p");
-    footerParagraph.textContent = `Last modified: ${lastModified}`;
-    document.querySelector("footer").appendChild(footerParagraph);
+// Mostrar la última fecha de modificación del documento
+document.getElementById("last-modified").textContent = `Last Modified: ${document.lastModified}`;
 
-    // Array de cursos
-    const courses = [
-        { name: "CSE 110", completed: true, credits: 3, category: "CSE" },
-        { name: "WDD 130", completed: false, credits: 4, category: "WDD" },
-        { name: "WDD 131", completed: false, credits: 3, category: "WDD" },
-        { name: "CSE 111", completed: false, credits: 3, category: "CSE" },
-        { name: "CSE 210", completed: true, credits: 3, category: "CSE" },
-        { name: "WDD 231", completed: false, credits: 4, category: "WDD" }
-    ];
+// Cursos
+const courses = [
+  { code: "CSE 110", name: "Introduction to Programming", credits: 2, completed: true },
+  { code: "CSE 111", name: "Programming with Functions", credits: 2, completed: false },
+  { code: "CSE 210", name: "Programming with Classes", credits: 2, completed: false },
+  { code: "CSE 310", name: "Data Structures and Algorithms", credits: 2, completed: false },
+  { code: "WDD 130", name: "Web Fundamentals", credits: 2, completed: true },
+  { code: "WDD 131", name: "Dynamic Web Fundamentals", credits: 2, completed: true },
+  { code: "WDD 230", name: "Web Frontend Development I", credits: 2, completed: false },
+  { code: "WDD 330", name: "Web Frontend Development II", credits: 2, completed: false },
+  { code: "WDD 331", name: "Web Fullstack Development", credits: 2, completed: false }
+];
 
-    // Función para mostrar los cursos
-    function displayCourses(coursesToDisplay) {
-        const coursesDiv = document.querySelector(".courses");
-        coursesDiv.innerHTML = ""; // Limpiar la lista de cursos
-        let totalCredits = 0;
+// Mostrar cursos según filtro
+function displayCourses(filter) {
+  const courseContainer = document.querySelector(".courses");
+  courseContainer.innerHTML = ""; // Limpiar
 
-        coursesToDisplay.forEach(course => {
-            const button = document.createElement("button");
-            button.textContent = course.name;
-            button.classList.add(course.category.toLowerCase());
+  // Filtrado
+  let filteredCourses = courses;
+  if (filter === "CSE") {
+    filteredCourses = courses.filter(course => course.code.startsWith("CSE"));
+  } else if (filter === "WDD") {
+    filteredCourses = courses.filter(course => course.code.startsWith("WDD"));
+  }
 
-            // Estilo para cursos completados
-            if (course.completed) {
-                button.style.backgroundColor = "#8fbc8f"; // Verde claro
-                button.style.color = "white";
-            }
+  // Total de créditos
+  const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
 
-            // Mostrar los cursos en la página
-            coursesDiv.appendChild(button);
-            totalCredits += course.credits;
-        });
+  // Mostrar cada curso
+  filteredCourses.forEach(course => {
+    const card = document.createElement("div");
+    card.classList.add("course-card");
+    card.classList.add(course.code.startsWith("CSE") ? "cse" : "wdd");
+    if (course.completed) card.classList.add("completed");
 
-        // Mostrar el total de créditos
-        const totalCreditsElement = document.createElement("p");
-        totalCreditsElement.textContent = `Total credits: ${totalCredits}`;
-        document.querySelector(".certificate").appendChild(totalCreditsElement);
-    }
+    card.innerHTML = `
+      <h3>${course.code}</h3>
+      <p>${course.name}</p>
+      <p>Credits: ${course.credits}</p>
+    `;
+    courseContainer.appendChild(card);
+  });
 
-    // Mostrar todos los cursos al cargar
-    displayCourses(courses);
+  // Mostrar créditos totales
+  const creditTotal = document.createElement("p");
+  creditTotal.textContent = `Total Credits: ${totalCredits}`;
+  creditTotal.classList.add("credit-total");
+  courseContainer.appendChild(creditTotal);
+}
 
-    // Filtrar por categoría (CSE, WDD o Todos)
-    const buttons = document.querySelectorAll(".filters button");
-    buttons.forEach(button => {
-        button.addEventListener("click", () => {
-            let filteredCourses;
-            if (button.textContent === "All") {
-                filteredCourses = courses;
-            } else {
-                filteredCourses = courses.filter(course => course.category === button.textContent);
-            }
-            displayCourses(filteredCourses);
-        });
-    });
+// Botones de filtro
+document.querySelector(".filters").addEventListener("click", e => {
+  if (e.target.tagName === "BUTTON") {
+    displayCourses(e.target.textContent);
+  }
 });
+
+// Carga inicial
+displayCourses("All");
+
+document.getElementById('menu-toggle').addEventListener('click', function() {
+    var nav = document.getElementById('navbar');
+    nav.classList.toggle('active');  // Añadimos o quitamos la clase 'active'
+});
+
+

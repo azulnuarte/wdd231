@@ -1,0 +1,14 @@
+.main-sections {
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-top h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.ubication p {
+    margin-left: 0;
+    text-align: center;
+}

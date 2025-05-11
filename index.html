@@ -6,28 +6,36 @@
     <meta name="description" content="..">
     <meta name="author" content="Azul Nuarte">
     <title>Azul A. Nuarte</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="styles/small.css">
+   <!-- CSS principal -->
+<link rel="stylesheet" href="styles/styles.css">
+
+<!-- CSS para pantallas grandes -->
+<link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 901px)">
+
+<!-- CSS para pantallas pequeñas -->
+<link rel="stylesheet" href="styles/small.css" media="screen and (max-width: 900px)">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <script src="scripts/javascript.js" defer></script>
+    <script src="scripts/javacript.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="header-top">
-            <img src="images/profile.jpg" alt="profile">
-            <h1>Azul A. Nuarte</h1>
-        </div>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Chamber</a>
-            <a href="#">Final</a>
-            <a href="#">GitHub Profile</a>
-            <a href="www.linkedin.com/in/azul-nuarte-904334261">LinkedIn</a>
-        </nav>
-    </header>
+   <header>
+    <div class="header-top">
+        <img src="images/profile.jpg" alt="profile">
+        <h1>Azul A. Nuarte</h1>
+    </div>
+    <nav id="navbar">
+        <a href="#">Home</a>
+        <a href="#">Chamber</a>
+        <a href="#">Final</a>
+        <a href="#">GitHub Profile</a>
+        <a href="www.linkedin.com/in/azul-nuarte-904334261">LinkedIn</a>
+    </nav>
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button> <!-- Icono de menú hamburguesa -->
+</header>
+
     
     <main>
         <h2> Home </h2>
@@ -63,9 +71,10 @@
           
     </main>
     <footer>
-        <p>©2025 💙Azul Agustina Nuarte💙 Mendoza</p>
-        
-        <img src="images/argentina.png" alt="Argentina Flag" class="flag">
+      <p id="year">© <span id="copyright-year"></span> 💙Azul Agustina Nuarte💙 Mendoza</p>
+      <p id="last-modified"></p>
+      <img src="images/argentina.png" alt="Argentina Flag" class="flag">
     </footer>
+
 </body>
 </html>
