@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:  Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* HEADER */
+/* Estilo general del header */
+header {
+    background-color: #1a4b7a;
+    color: white;
+    padding: 1rem;
+}
+
+/* Fila superior del header (imagen + nombre centrados) */
+.header-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.header-top img {
+    width: 80px;
+    height: auto;
+    border-radius: 10%; /* Opcional: para que sea redonda */
+}
+
+/* Título del header */
+.header-top h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Navegación debajo */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #123a5a;
+    border-radius: 5px;
+}
+
+
+/* MAIN */
+
+main {
+    padding: 2rem;
+}
+
+.main-sections {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap; /* Esto ayuda en pantallas pequeñas */
+}
+
+.work, .ubication {
+    flex: 1;
+    min-width: 300px;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}  
+
+.work ul li {
+    margin-left: 5%;
+}
+
+
+.work h2, .ubication h2 {
+    background-color: #1f4d78;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.ubication img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-left: 25%;
+}
+
+.ubication p{
+    margin-left: 40%;
+}
+
+/* CERTIFICATE */
+.certificate {
+    background-color: #1f4d78;
+    color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.filters button {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.courses button {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    min-width: 100px;
+}
+
+.courses .cse {
+    background-color: #803c1c;
+}
+
+.courses .wdd {
+    background-color: #a85f32;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1f4d78;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer img.flag {
+    width: 30px;
+    margin-top: 0.5rem;
+}
