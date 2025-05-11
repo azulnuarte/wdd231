@@ -5,7 +5,7 @@
 }
 
 body {
-       font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
@@ -17,6 +17,13 @@ header {
     color: white;
     padding: 1rem;
 }
+.name {
+    font-size: 3rem; /* Tamaño grande */
+    color: white; /* Color blanco */
+    font-weight: bold; /* Hacer el texto más destacado */
+    font-family: 'Open Sans', sans-serif; /* Puedes mantener la fuente que estés usando */
+}
+
 
 /* Fila superior del header (imagen + nombre centrados) */
 .header-top {
@@ -160,7 +167,6 @@ main {
 }
 
 
-
 /* CERTIFICATE */
 .certificate {
     background-color: #1f4d78;
@@ -191,27 +197,8 @@ main {
     gap: 1rem;
 }
 
-/* BOTONES ANTIGUOS (SI HUBIERA) */
-.courses button {
-    padding: 1rem;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    color: white;
-    cursor: pointer;
-    min-width: 100px;
-}
-
-.courses .cse {
-    background-color: #803c1c;
-}
-
-.courses .wdd {
-    background-color: #a85f32;
-}
-
-/* NUEVO DISEÑO DE CURSO */
-.course-card {
+/* DISEÑO INDIVIDUAL DEL CURSO */
+.course {
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
@@ -219,10 +206,20 @@ main {
     width: 250px;
     text-align: center;
     font-weight: bold;
+    background-color: #a85f32; /* color base */
+}
+
+/* DIFERENCIAR POR ASIGNATURA */
+.course.cse {
+    background-color: #803c1c;
+}
+
+.course.wdd {
+    background-color: #a85f32;
 }
 
 /* CURSOS COMPLETADOS */
-.course-card.completed {
+.course.completed {
     border: 2px solid #00ff88;
     opacity: 0.95;
     box-shadow: 0 0 10px rgba(0, 255, 136, 0.6);
@@ -237,6 +234,7 @@ main {
     color: #1a4b7a;
     margin-top: 1rem;
 }
+
 
 /* FOOTER */
 footer {
