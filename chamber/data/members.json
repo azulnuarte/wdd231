@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Savanna Tours",
+    "address": "123 Safari Blvd, Timbuktu",
+    "phone": "+223 456 7890",
+    "website": "https://savannatours.com",
+    "image": "savanna.png",
+    "membership": 3,
+    "description": "Luxury desert tours with camels and jeeps."
+  },
+  {
+    "name": "Sahara Coffee",
+    "address": "45 Bean St, Timbuktu",
+    "phone": "+223 222 3333",
+    "website": "https://saharacoffee.ml",
+    "image": "saharacoffee.png",
+    "membership": 1,
+    "description": "Local coffee shop with fresh brews and pastries."
+  },
+  {
+    "name": "Nomad Carpets",
+    "address": "87 Weave Way, Timbuktu",
+    "phone": "+223 987 6543",
+    "website": "https://nomadcarpets.com",
+    "image": "nomadcarpets.png",
+    "membership": 2,
+    "description": "Hand-woven carpets and tapestries."
+  },
+  {
+    "name": "Desert Tech",
+    "address": "12 Innovation Rd, Timbuktu",
+    "phone": "+223 123 0000",
+    "website": "https://deserttech.ml",
+    "image": "deserttech.png",
+    "membership": 3,
+    "description": "Tech solutions for remote areas."
+  },
+  {
+    "name": "Timbuktu Crafts",
+    "address": "33 Artisan Alley, Timbuktu",
+    "phone": "+223 456 1111",
+    "website": "https://timbuktucrafts.ml",
+    "image": "timbuktucrafts.png",
+    "membership": 1,
+    "description": "Handcrafted goods from local artisans."
+  },
+  {
+    "name": "Blue Dune Books",
+    "address": "99 Story Ln, Timbuktu",
+    "phone": "+223 333 2222",
+    "website": "https://bluedunebooks.com",
+    "image": "bluedunebooks.png",
+    "membership": 2,
+    "description": "Independent bookstore & café."
+  },
+  {
+    "name": "Solar Mali",
+    "address": "20 Power Ave, Timbuktu",
+    "phone": "+223 321 4321",
+    "website": "https://solarmali.ml",
+    "image": "solarmali.png",
+    "membership": 3,
+    "description": "Renewable energy for a better Mali."
+  }
+]
+
