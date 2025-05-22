@@ -1,48 +1,51 @@
-const memberContainer = document.getElementById("members");
-const gridBtn = document.getElementById("grid");
-const listBtn = document.getElementById("list");
+const url = "scripts/members.json";
+const container = document.getElementById("business-list");
 
 async function getMembers() {
-  const response = await fetch("data/members.json");
+  const response = await fetch(url);
   const data = await response.json();
   displayMembers(data);
 }
 
 function displayMembers(members) {
-  memberContainer.innerHTML = "";
+  container.innerHTML = ""; // limpiar antes de agregar
   members.forEach(member => {
-    const card = document.createElement("section");
+    let card = document.createElement("section");
     card.classList.add("member-card");
+
     card.innerHTML = `
-      <img src="images/${member.image}" alt="${member.name} logo">
-      <h2>${member.name}</h2>
-      <p><strong>${member.description}</strong></p>
+      <h3>${member.name}</h3>
+      <img src="${member.image}" alt="${member.name} Logo" loading="lazy">
       <p><strong>Address:</strong> ${member.address}</p>
       <p><strong>Phone:</strong> ${member.phone}</p>
-      <p><a href="${member.website}" target="_blank">Visit Website</a></p>
-      <p class="membership level-${member.membership}">Membership: ${getLevel(member.membership)}</p>
+      <a href="${member.website}" target="_blank">Visit Website</a>
+      <p class="membership">${member.membershipLevel} Member</p>
     `;
-    memberContainer.appendChild(card);
+
+    container.appendChild(card);
   });
 }
 
-function getLevel(level) {
-  switch (level) {
-    case 1: return "Member";
-    case 2: return "Silver";
-    case 3: return "Gold";
-    default: return "Unknown";
-  }
-}
-
-gridBtn.addEventListener("click", () => {
-  memberContainer.classList.add("grid-view");
-  memberContainer.classList.remove("list-view");
+document.getElementById("grid-view").addEventListener("click", () => {
+  container.classList.add("grid");
+  container.classList.remove("list");
 });
 
-listBtn.addEventListener("click", () => {
-  memberContainer.classList.add("list-view");
-  memberContainer.classList.remove("grid-view");
+document.getElementById("list-view").addEventListener("click", () => {
+  container.classList.add("list");
+  container.classList.remove("grid");
 });
 
 getMembers();
+
+
+// Mostrar el año actual
+  const yearSpan = document.getElementById("copyright-year");
+  const currentYear = new Date().getFullYear();
+  yearSpan.textContent = currentYear;
+
+// Mostrar la última fecha de modificación del documento
+  const lastModified = document.lastModified;
+  const lastModifiedParagraph = document.getElementById("last-modified");
+  lastModifiedParagraph.textContent = `Last Modified: ${lastModified}`;
+

@@ -1,36 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Member Directory</title>
-  <link rel="stylesheet" href="styles/directory.css" />
+  <!--Metadata -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="auhor" content="Azul Nuarte">
+  <meta name="description" content="Timbuktu Chamber of Commerce - Your hub for local business resources, events, and networking opportunities.">
+  <!--OG Fbook -->
+  <meta property="og:title" content="Timbuktu Chamber of Commerce">
+  <meta property="og:description" content="Timbuktu Chamber of Commerce - Your hub for local business resources, events, and networking opportunities.">
+  <meta property="og:image" content="images/timbuktu.jpg">
+  <meta property="og:url" content=" https://azulnuarte.github.io/wdd231/chamber/directory.html">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Timbuktu Chamber of Commerce">
+  <!--links css -->
+  <link rel="stylesheet" href="styles/directory.css">
+  <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 901px)">
+  <link rel="stylesheet" href="styles/small.css" media="screen and (max-width: 900px)">
+  <!--links js -->
+  <script src="scripts/directory.js" defer></script>
+  <!--title -->
+  <title>Timbuktu Chamber of Commerce </title>
 </head>
 <body>
   <header>
-    <h1>Timbuktu Chamber of Commerce</h1>
-  </header>
-
-  <main>
-    <h2>Member Directory</h2>
-    <div class="view-buttons">
-      <button id="grid">Grid View</button>
-      <button id="list">List View</button>
+    <div class="header-top">
+        <img src="images/profile.jpg" alt="profile">
+       <span class="name">Timbuktu</span>
     </div>
-    <div id="members" class="grid-view"></div>
-  </main>
+    <nav id="navbar">
+        <a href="#">Home</a>
+        <a href="#">Directory</a>
+        <a href="#">Join</a>
+        <a href="#">Discover</a>
+        
+    </nav>
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button> 
+  </header>
+  <main>
+   <div class="hero">
+    <img src="images/wallpaper.webp" alt="Rafting Hero Background">
+    <h1>Timbuktu Chamber of Commerce </h1>
+   </div>
 
-  <footer>
-    <p>© <span id="year"></span> Timbuktu Chamber of Commerce</p>
-    <p>Last Modification: <span id="last-modified"></span></p>
-  </footer>
+   <section id="home">
+      <h2>Welcome to the Timbuktu Chamber of Commerce</h2>
+      <p>Supporting local businesses and encouraging economic growth in Timbuktu.</p>
+    </section>
 
-  <script src="scripts/directory.js"></script>
-  <script>
-    // Footer data
-    document.getElementById("year").textContent = new Date().getFullYear();
-    document.getElementById("last-modified").textContent = document.lastModified;
-  </script>
+   <div class="toggle-buttons">
+     <button id="grid-view">Grid View</button>
+    <button id="list-view">List View</button>
+   </div>
+   <div id="business-list" class="grid"></div>
+
+    <section id="events">
+      <h2>Upcoming Events</h2>
+      <ul id="events-list"></ul>
+    </section>
+
+    <section id="directory">
+      <h2>Business Directory</h2>
+      <ul id="business-list"></ul>
+    </section>
+
+    <section id="membership">
+      <h2>Become a Member</h2>
+      <p>Learn about membership benefits, fees, and how to join our growing network of businesses.</p>
+      <button onclick="window.location.href='membership.html'">Join Now</button>
+    </section>
+</main>
+<footer>
+  
+  <p id="year">© <span id="copyright-year"></span> 
+  WDD231 Project
+  Azul Nuarte
+  2025 Timbuktu Chamber of Commerce
+  +5492615012310</p>
+  <p id="last-modified"></p>
+  <div class="social-icons">
+    <a href="https://facebook.com" target="_blank"><img src="images/facebook.webp" alt="Facebook"></a>
+    <a href="https://twitter.com" target="_blank"><img src="images/twitter.webp" alt="Twitter"></a>
+    <a href="https://instagram.com" target="_blank"><img src="images/instagram.webp" alt="Instagram"></a>
+  </div>
+</footer>
 </body>
 </html>
 
