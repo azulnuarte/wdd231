@@ -135,9 +135,10 @@ main{
 }
 
 h1{
-  color:#606c38;
+  color:#e3e7d7;
   justify-content: center;
   padding:1rem;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Footer */
@@ -203,11 +204,47 @@ footer {
 }
 
 .member-card a {
-  color: #606c38;
+  color: #434b28;
   text-decoration: none;
   font-weight: 500;
 }
 
 .member-card a:hover {
   text-decoration: underline;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #1a1d0f;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+#spotlights .spotlight-container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 38rem) {
+  #spotlights .spotlight-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 64rem) {
+  #spotlights .spotlight-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
