@@ -8,22 +8,33 @@ async function getMembers() {
 }
 
 function displayMembers(members) {
-  container.innerHTML = ""; // limpiar antes de agregar
+  container.innerHTML = "";
   members.forEach(member => {
     let card = document.createElement("section");
     card.classList.add("member-card");
 
     card.innerHTML = `
-      <h3>${member.name}</h3>
-      <img src="${member.image}" alt="${member.name} Logo" loading="lazy">
-      <p><strong>Address:</strong> ${member.address}</p>
-      <p><strong>Phone:</strong> ${member.phone}</p>
-      <a href="${member.website}" target="_blank">Visit Website</a>
-      <p class="membership">${member.membershipLevel} Member</p>
+      <img src="${member.image}" alt="${member.name} logo" loading="lazy">
+      <div class="member-info">
+        <h3>${member.name}</h3>
+        <p><strong>Address:</strong> ${member.address}</p>
+        <p><strong>Phone:</strong> ${member.phone}</p>
+        <a href="${member.website}" target="_blank">Visit Website</a>
+        <p class="membership">${getMembershipLabel(member.membership)}</p>
+      </div>
     `;
 
     container.appendChild(card);
   });
+}
+
+function getMembershipLabel(level) {
+  switch(level) {
+    case 1: return "Bronze";
+    case 2: return "Silver";
+    case 3: return "Gold";
+    default: return "Member";
+  }
 }
 
 document.getElementById("grid-view").addEventListener("click", () => {
@@ -38,22 +49,18 @@ document.getElementById("list-view").addEventListener("click", () => {
 
 getMembers();
 
+const yearSpan = document.getElementById("copyright-year");
+const currentYear = new Date().getFullYear();
+yearSpan.textContent = currentYear;
 
-// Mostrar el año actual
-  const yearSpan = document.getElementById("copyright-year");
-  const currentYear = new Date().getFullYear();
-  yearSpan.textContent = currentYear;
-
-// Mostrar la última fecha de modificación del documento
-  const lastModified = document.lastModified;
-  const lastModifiedParagraph = document.getElementById("last-modified");
-  lastModifiedParagraph.textContent = `Last Modified: ${lastModified}`;
-
+const lastModified = document.lastModified;
+const lastModifiedParagraph = document.getElementById("last-modified");
+lastModifiedParagraph.textContent = `Last Modified: ${lastModified}`;
 
 const hamburgerElement = document.querySelector('#myButton');
 const navElement = document.querySelector('#animateme');
 
 hamburgerElement.addEventListener('click', () => {
-    navElement.classList.toggle('open');
-    hamburgerElement.classList.toggle('open');
+  navElement.classList.toggle('open');
+  hamburgerElement.classList.toggle('open');
 });

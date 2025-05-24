@@ -1,13 +1,55 @@
 @media only screen and (min-width:38rem) {
-  #myButton{
+  #myButton {
     display: none;
   }
-  
-  ul.menuLinks, ul.menuLinks.open{
-    display:flex;
-    justify-content:flex-end;
+
+  ul.menuLinks, ul.menuLinks.open {
+    display: flex;
+    justify-content: flex-end;
   }
-  nav{
+
+  nav {
     grid-template-rows: 1fr;
   }
+
+  #business-list.grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media only screen and (min-width: 64rem) {
+    #business-list.grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  #business-list.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .member-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #business-list.list .member-card {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    padding: 1rem;
+  }
+
+  #business-list.list .member-card img {
+    width: 120px;
+    height: auto;
+    margin-right: 1rem;
+  }
+
+  #business-list.list .member-info {
+    flex: 1;
+  }
 }
+
+

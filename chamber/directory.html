@@ -1,108 +1,81 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!--Metadata -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Azul Nuarte">
   <meta name="description" content="Timbuktu Chamber of Commerce - Your hub for local business resources, events, and networking opportunities.">
-  <!--OG Fbook -->
   <meta property="og:title" content="Timbuktu Chamber of Commerce">
   <meta property="og:description" content="Timbuktu Chamber of Commerce - Your hub for local business resources, events, and networking opportunities.">
-  <meta property="og:image" content="https://azulnuarte.github.io/wdd231/chamber/images/timbuktu.jpg">
-  <meta property="og:url" content="https://azulnuarte.github.io/wdd231/chamber/directory.html">
+  <meta property="og:image" content="images/timbuktu.jpg">
+  <meta property="og:url" content="https://yourgithub.github.io/chamber-directory">
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Timbuktu Chamber of Commerce">
-  <!--links css -->
- <link rel="stylesheet" href="styles/small.css">
- <link rel="stylesheet" href="styles/large.css">
-
-  <!--links js -->
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
   <script src="scripts/directory.js" defer></script>
   <link rel="icon" href="favicon.ico">
-  <!--title -->
-  <title>Timbuktu Chamber of Commerce </title>
+  <title>Timbuktu Chamber of Commerce</title>
 </head>
 <body>
   <header>
-  <img src="images/logo.png" alt="profile">
-  <div class="branding">
-    <span class="name">Timbuktu</span>
-    <p class="subtitle">Chamber of Commerce</p>
-  </div>
-  <button id="myButton"> </button>
-</header>
+    <img src="images/logo.png" alt="profile">
+    <div class="branding">
+      <span class="name">Timbuktu</span>
+      <p class="subtitle">Chamber of Commerce</p>
+    </div>
+    <button id="myButton"></button>
+  </header>
 
   <nav id="animateme">
-   
-   <ul class="menuLinks">
-     <li class="current-menu-item"><a href="#"> Home</a></li>
-    <li><a href="#" title="Home">Directory</a></li>
-    <li><a href="#" title="service"> Join </a></li>
-    <li><a href="#" title="History">Discover</a></li>
-   </ul>
- </nav>
-   
- 
+    <ul class="menuLinks">
+      <li class="current-menu-item"><a href="#">Home</a></li>
+      <li><a href="#">Directory</a></li>
+      <li><a href="#">Join</a></li>
+      <li><a href="#">Discover</a></li>
+    </ul>
+  </nav>
+
   <main>
-   <div class="hero">
-    <img src="images/timb.jpg" alt="Timbuktu backgrund">
-    <h1>Timbuktu Chamber of Commerce </h1>
-   </div>
-
-   <section id="home">
-      <h2>Home</h2>
-      <p>Supporting local businesses and encouraging economic growth in Timbuktu.</p>
-    </section>
-
-   <div class="toggle-buttons">
-     <button id="grid-view">Grid View</button>
-    <button id="list-view">List View</button>
-   </div>
-   <div id="business-list" class="grid"></div>
-
-    <section id="events">
-      <h2>Upcoming Events</h2>
-      <ul id="events-list"></ul>
-    </section>
-
-    <section id="directory">
-      <h2>Business Directory</h2>
-      <ul id="business-list"></ul>
-    </section>
-
-    <section id="membership">
-      <h2>Become a Member</h2>
-      <p>Learn about membership benefits, fees, and how to join our growing network of businesses.</p>
-      <button onclick="window.location.href='membership.html'">Join Now</button>
-    </section>
-</main>
-<footer>
-  <div class="footer-left">
- 
-    WDD231 Project <br>
-    Azul Nuarte <br>
-    Timbuktu Chamber of Commerce <br>
-    +54 9 261 5012310
-  </p>
-</div>
-
-
-  <div class="footer-center">
-    <div class="social-icons">
-      <a href="https://facebook.com" target="_blank"><img src="images/faceicon.png" alt="Facebook"></a>
-      <a href="https://twitter.com" target="_blank"><img src="images/twicon.png" alt="Twitter"></a>
-      <a href="https://instagram.com" target="_blank"><img src="images/igicon.png" alt="Instagram"></a>
+    <div class="hero">
+      <img src="images/timbu.webp" alt="Timbuktu background">
     </div>
-  </div>
 
-  <div class="footer-right">
-    <p id="last-modified"></p>
-    <p id="year">© <span id="copyright-year"></span><br>
-  </div>
-</footer>
+    <section id="home">
+      <h1>Home</h1>
+    </section>
 
+    <div class="toggle-buttons">
+      <button id="grid-view">Grid</button>
+      <button id="list-view">List</button>
+    </div>
+
+    <div id="business-list" class="grid"></div>
+
+   
+
+  <footer>
+    <div class="footer-left">
+      WDD231 Project<br>
+      Azul Nuarte<br>
+      Timbuktu Chamber of Commerce<br>
+      +54 9 261 5012310
+    </div>
+
+    <div class="footer-center">
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><img src="images/faceicon.png" alt="Facebook"></a>
+        <a href="https://twitter.com" target="_blank"><img src="images/twicon.png" alt="Twitter"></a>
+        <a href="https://instagram.com" target="_blank"><img src="images/igicon.png" alt="Instagram"></a>
+      </div>
+    </div>
+
+    <div class="footer-right">
+      <p id="last-modified"></p>
+      <p id="year">&copy; <span id="copyright-year"></span></p>
+    </div>
+  </footer>
 </body>
 </html>
-

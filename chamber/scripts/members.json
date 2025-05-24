@@ -4,18 +4,16 @@
     "address": "123 Safari Blvd, Timbuktu",
     "phone": "+223 456 7890",
     "website": "https://savannatours.com",
-    "image": "images/tours.avif",
-    "membership": 3,
-    "description": "Luxury desert tours with camels and jeeps."
+    "image": "images/savtours.webp",
+    "membership": 3
   },
   {
     "name": "Sahara Coffee",
     "address": "45 Bean St, Timbuktu",
     "phone": "+223 222 3333",
     "website": "https://saharacoffee.ml",
-    "image": "saharacoffee.png",
-    "membership": 1,
-    "description": "Local coffee shop with fresh brews and pastries."
+    "image": "images/cofsa.avif",
+    "membership": 1
   },
   {
     "name": "Nomad Carpets",
@@ -23,8 +21,7 @@
     "phone": "+223 987 6543",
     "website": "https://nomadcarpets.com",
     "image": "images/carpnom.jpg",
-    "membership": 2,
-    "description": "Hand-woven carpets and tapestries."
+    "membership": 2
   },
   {
     "name": "Desert Tech",
@@ -32,35 +29,31 @@
     "phone": "+223 123 0000",
     "website": "https://deserttech.ml",
     "image": "images/dess.jpg",
-    "membership": 3,
-    "description": "Tech solutions for remote areas."
+    "membership": 3
   },
   {
     "name": "Timbuktu Crafts",
     "address": "33 Artisan Alley, Timbuktu",
     "phone": "+223 456 1111",
     "website": "https://timbuktucrafts.ml",
-    "image": "timbuktucrafts.png",
-    "membership": 1,
-    "description": "Handcrafted goods from local artisans."
+    "image": "images/tcraft.jpeg",
+    "membership": 1
   },
   {
     "name": "Blue Dune Books",
     "address": "99 Story Ln, Timbuktu",
     "phone": "+223 333 2222",
     "website": "https://bluedunebooks.com",
-    "image": "bluedunebooks.png",
-    "membership": 2,
-    "description": "Independent bookstore & café."
+    "image": "images/books.avif",
+    "membership": 2
   },
   {
     "name": "Solar Mali",
     "address": "20 Power Ave, Timbuktu",
     "phone": "+223 321 4321",
     "website": "https://solarmali.ml",
-    "image": "solarmali.png",
-    "membership": 3,
-    "description": "Renewable energy for a better Mali."
+    "image": "images/solarmali.webp",
+    "membership": 3
   }
 ]
 
