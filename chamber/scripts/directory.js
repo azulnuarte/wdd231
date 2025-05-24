@@ -49,3 +49,11 @@ getMembers();
   const lastModifiedParagraph = document.getElementById("last-modified");
   lastModifiedParagraph.textContent = `Last Modified: ${lastModified}`;
 
+
+const hamburgerElement = document.querySelector('#myButton');
+const navElement = document.querySelector('#animateme');
+
+hamburgerElement.addEventListener('click', () => {
+    navElement.classList.toggle('open');
+    hamburgerElement.classList.toggle('open');
+});

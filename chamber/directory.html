@@ -15,9 +15,9 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Timbuktu Chamber of Commerce">
   <!--links css -->
-  <link rel="stylesheet" href="styles/directory.css">
-  <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 901px)">
-  <link rel="stylesheet" href="styles/small.css" media="screen and (max-width: 900px)">
+ <link rel="stylesheet" href="styles/small.css">
+ <link rel="stylesheet" href="styles/large.css">
+
   <!--links js -->
   <script src="scripts/directory.js" defer></script>
   <link rel="icon" href="favicon.ico">
@@ -26,27 +26,33 @@
 </head>
 <body>
   <header>
-    <div class="header-top">
-        <img src="images/timbuktu.jpg" alt="profile">
-       <span class="name">Timbuktu</span>
-    </div>
-    <nav id="navbar">
-        <a href="#">Home</a>
-        <a href="#">Directory</a>
-        <a href="#">Join</a>
-        <a href="#">Discover</a>
-        
-    </nav>
-    <button class="menu-toggle" id="menu-toggle">&#9776;</button> 
-  </header>
+  <img src="images/logo.png" alt="profile">
+  <div class="branding">
+    <span class="name">Timbuktu</span>
+    <p class="subtitle">Chamber of Commerce</p>
+  </div>
+  <button id="myButton"> </button>
+</header>
+
+  <nav id="animateme">
+   
+   <ul class="menuLinks">
+     <li class="current-menu-item"><a href="#"> Home</a></li>
+    <li><a href="#" title="Home">Directory</a></li>
+    <li><a href="#" title="service"> Join </a></li>
+    <li><a href="#" title="History">Discover</a></li>
+   </ul>
+ </nav>
+   
+ 
   <main>
    <div class="hero">
-    <img src="images/timb.jpg" alt="Rafting Hero Background">
+    <img src="images/timb.jpg" alt="Timbuktu backgrund">
     <h1>Timbuktu Chamber of Commerce </h1>
    </div>
 
    <section id="home">
-      <h2>Welcome to the Timbuktu Chamber of Commerce</h2>
+      <h2>Home</h2>
       <p>Supporting local businesses and encouraging economic growth in Timbuktu.</p>
     </section>
 
@@ -74,10 +80,14 @@
 </main>
 <footer>
   <div class="footer-left">
-    <p id="year">© <span id="copyright-year"></span> 
-      WDD231 Project · Azul Nuarte · Timbuktu Chamber of Commerce · +54 9 261 5012310
-    </p>
-  </div>
+ 
+    WDD231 Project <br>
+    Azul Nuarte <br>
+    Timbuktu Chamber of Commerce <br>
+    +54 9 261 5012310
+  </p>
+</div>
+
 
   <div class="footer-center">
     <div class="social-icons">
@@ -89,6 +99,7 @@
 
   <div class="footer-right">
     <p id="last-modified"></p>
+    <p id="year">© <span id="copyright-year"></span><br>
   </div>
 </footer>
 
