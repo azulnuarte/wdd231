@@ -217,7 +217,7 @@ footer {
   position: relative;
   z-index: 2;
   color: white;
-  text-align: center;
+  text-align: right;
 }
 
 .cta-button {
@@ -247,4 +247,56 @@ footer {
   #spotlights .spotlight-container {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+/* Sección: Weather */
+#weather {
+  background-color: #f2f2f2;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+#weather h2 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+#weather p {
+  margin: 0.5rem 0;
+  color: #555;
+  font-size: 1rem;
+}
+
+#weather img {
+  vertical-align: middle;
+  width: 48px;
+  height: 48px;
+}
+
+/* Sección: Upcoming Events */
+#events {
+  background-color: #e9f5e5;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+#events h2 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+#events ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#events li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ccc;
+  font-size: 1rem;
+  color: #444;
 }
