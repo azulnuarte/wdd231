@@ -50,17 +50,21 @@ document.getElementById("list-view").addEventListener("click", () => {
 getMembers();
 
 const yearSpan = document.getElementById("copyright-year");
-const currentYear = new Date().getFullYear();
-yearSpan.textContent = currentYear;
+if (yearSpan) {
+  const currentYear = new Date().getFullYear();
+  yearSpan.textContent = currentYear;
+}
 
-const lastModified = document.lastModified;
 const lastModifiedParagraph = document.getElementById("last-modified");
-lastModifiedParagraph.textContent = `Last Modified: ${lastModified}`;
+if (lastModifiedParagraph) {
+  lastModifiedParagraph.textContent = `Last Modified: ${document.lastModified}`;
+}
 
 const hamburgerElement = document.querySelector('#myButton');
 const navElement = document.querySelector('#animateme');
-
-hamburgerElement.addEventListener('click', () => {
-  navElement.classList.toggle('open');
-  hamburgerElement.classList.toggle('open');
-});
+if (hamburgerElement && navElement) {
+  hamburgerElement.addEventListener('click', () => {
+    navElement.classList.toggle('open');
+    hamburgerElement.classList.toggle('open');
+  });
+}

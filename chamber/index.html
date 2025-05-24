@@ -15,8 +15,7 @@
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/large.css">
   <script src="scripts/spotlight.js" defer></script>
- <script src="scripts/weather.js" defer></script>
-
+  <script src="scripts/weather.js" defer></script>
   <script src="scripts/directory.js" defer></script>
   <link rel="icon" href="favicon.ico">
   <title>Home | Timbuktu Chamber of Commerce</title>
@@ -49,20 +48,32 @@
       </div>
     </div>
 
-    <section id="events">
-      <h2>Upcoming Events</h2>
-      <ul>
-        <li>🏆 Small Business Awards - July 15</li>
-        <li>🎓 Youth Entrepreneurs Workshop - July 22</li>
-      </ul>
-    </section>
+ <div class="weather-events-container">
+  <section id="events">
+    <h2>Upcoming Events</h2>
+    <ul>
+      <li>🏆 Small Business Awards - July 15</li>
+      <li>🎓 Youth Entrepreneurs Workshop - July 22</li>
+    </ul>
+  </section>
 
   <section id="weather">
-  <h2>Current Weather</h2>
-  <p id="current-temp"></p>
-  <p id="weather-desc"></p>
-  <div id="forecast"></div>
-</section>
+    <h2>Current Weather</h2>
+    <div id="weather-info">
+      <p id="current-temp"></p>
+      <p id="weather-desc"></p>
+    </div>
+  </section>
+
+  <section id="forecast">
+    <h2>3-Day Forecast</h2>
+    <!-- Este contenido se llena desde JS -->
+  </section>
+</div>
+
+
+</div>
+
 
 
     <section id="spotlights">
