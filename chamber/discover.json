@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Djingareyber Mosque",
+    "description": "Built in 1327, this mosque is one of Timbuktu's architectural icons.",
+    "image": "images/2.webp"
+  },
+  {
+    "name": "Ahmed Baba Manuscript Library",
+    "description": "Houses thousands of ancient manuscripts dating from the 13th to 17th centuries.",
+    "image": "images/books.webp"
+  },
+  {
+    "name": "Sankore Mosque",
+    "description": "Home to the ancient Islamic university, known for its cultural importance.",
+    "image": "images/3.webp"
+  },
+  {
+    "name": "Timbuktu Market",
+    "description": "A vibrant local market with traditional products and crafts.",
+    "image": "images/4.webp"
+  },
+  {
+    "name": "Timbuktu Museum",
+    "description": "Displays historical artifacts and documents from the region.",
+    "image": "images/5.webp"
+  },
+  {
+    "name": "Sidi Yahya Mosque",
+    "description": "A 15th-century historic mosque known for its spiritual symbolism.",
+    "image": "images/6.webp"
+  },
+  {
+    "name": "Explorers' House",
+    "description": "The place where famous European explorers stayed in the 19th century.",
+    "image": "images/7.webp"
+  },
+  {
+    "name": "Desert Dunes",
+    "description": "Spectacular natural landscapes ideal for excursions around Timbuktu.",
+    "image": "images/8.webp"
+  }
+]

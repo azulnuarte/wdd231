@@ -1,3 +1,4 @@
+<!-- discover.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,19 +9,22 @@
   <meta property="og:title" content="Timbuktu Chamber of Commerce">
   <meta property="og:description" content="Timbuktu Chamber of Commerce - Your hub for local business resources, events, and networking opportunities.">
   <meta property="og:image" content="https://azulnuarte.github.io/wdd231/chamber/images/timb.avif">
-  <meta property="og:url" content="https://azulnuarte.github.io/wdd231/chamber/directory.html">
+  <meta property="og:url" content="https://azulnuarte.github.io/wdd231/chamber/discover.html">
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Timbuktu Chamber of Commerce">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/large.css">
+   <link rel="stylesheet" href="styles/medium.css">
   <script src="scripts/discover.js" defer></script>
+ 
+
   <link rel="icon" href="favicon.ico">
   <title>Timbuktu Chamber of Commerce</title>
 </head>
 <body>
   <header>
-    <img src="images/logo.jpg" alt="profile">
+    <img src="images/logo.jpg" alt="Chamber logo">
     <div class="branding">
       <span class="name">Timbuktu</span>
       <p class="subtitle">Chamber of Commerce</p>
@@ -33,21 +37,22 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="directory.html">Directory</a></li>
       <li><a href="join.html">Join</a></li>
-     <li class="current-menu-item"><a href="discover.html">Discover</a></li>
+      <li class="current-menu-item"><a href="discover.html">Discover</a></li>
     </ul>
   </nav>
-<main>  
-   <section class="discover-layout">
-    <h1> Discover</h1>
-      <aside class="sidebar" id="visit-message">
-        <!-- Mensaje de visita se insertará aquí -->
-      </aside>
 
+  <main>
+    <section class="discover-layout">
+      <h1>Discover</h1>
+      <aside class="sidebar" id="visit-message">
+        <!-- Visit message will be inserted here -->
+      </aside>
       <div class="cards-container">
-        <!-- Las 8 tarjetas se insertarán aquí mediante JS -->
+        <!-- Cards will be generated here by JS -->
       </div>
     </section>
   </main>
+
   <footer>
     <div class="footer-left">
       WDD231 Project<br>
@@ -55,7 +60,6 @@
       Timbuktu Chamber of Commerce<br>
       +54 9 261 5012310
     </div>
-
     <div class="footer-center">
       <div class="social-icons">
         <a href="https://facebook.com" target="_blank"><img src="images/faceicon.png" alt="Facebook"></a>
@@ -63,11 +67,10 @@
         <a href="https://instagram.com" target="_blank"><img src="images/igicon.png" alt="Instagram"></a>
       </div>
     </div>
-
     <div class="footer-right">
       <p id="last-modified"></p>
       <p id="year">&copy; <span id="copyright-year"></span></p>
     </div>
   </footer>
-  </body>
+</body>
 </html>

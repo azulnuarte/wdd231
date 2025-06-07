@@ -1,57 +1,51 @@
-// Mostrar mensaje de última visita
-const visitMessage = document.getElementById('visit-message');
-const lastVisit = localStorage.getItem('lastVisit');
-const now = Date.now();
+// scripts/discover.js
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("discover.json")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("No se pudo cargar el archivo JSON.");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      const container = document.querySelector(".cards-container");
+      data.forEach((item) => {
+        const card = document.createElement("div");
+        card.classList.add("card");
 
-if (!lastVisit) {
-  visitMessage.innerHTML = "<p>¡Bienvenido! Esta es tu primera visita.</p>";
-} else {
-  const millisecondsInDay = 1000 * 60 * 60 * 24;
-  const daysSince = Math.floor((now - lastVisit) / millisecondsInDay);
+        card.innerHTML = `
+          <img src="${item.image}" alt="${item.name}">
+          <h2>${item.name}</h2>
+          <p>${item.description}</p>
+        `;
 
-  if (daysSince === 0) {
-    visitMessage.innerHTML = "<p>Bienvenido de nuevo. ¡Nos alegra verte otra vez hoy!</p>";
-  } else if (daysSince === 1) {
-    visitMessage.innerHTML = "<p>Pasó 1 día desde tu última visita.</p>";
-  } else {
-    visitMessage.innerHTML = `<p>Pasaron ${daysSince} días desde tu última visita.</p>`;
-  }
+        container.appendChild(card);
+      });
+    })
+    .catch((error) => {
+      console.error("Error al cargar las tarjetas:", error);
+    });
+});
+
+
+
+
+const yearSpan = document.getElementById("copyright-year");
+if (yearSpan) {
+  const currentYear = new Date().getFullYear();
+  yearSpan.textContent = currentYear;
 }
 
-localStorage.setItem('lastVisit', now);
+const lastModifiedParagraph = document.getElementById("last-modified");
+if (lastModifiedParagraph) {
+  lastModifiedParagraph.textContent = `Last Modified: ${document.lastModified}`;
+}
 
-// Cargar tarjetas de lugares
-const cardsContainer = document.querySelector('.cards-container');
-
-fetch('data.json')
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('No se pudo cargar el archivo JSON');
-    }
-    return response.json();
-  })
-  .then(data => {
-    data.forEach(lugar => {
-      const card = document.createElement('div');
-      card.classList.add('card');
-
-      card.innerHTML = `
-        <img src="${lugar.imagen}" alt="${lugar.nombre}">
-        <h3>${lugar.nombre}</h3>
-        <p>${lugar.descripcion}</p>
-      `;
-
-      cardsContainer.appendChild(card);
-    });
-  })
-  .catch(error => {
-    console.error('Error al cargar las tarjetas:', error);
-    cardsContainer.innerHTML = '<p>Error al cargar los lugares de interés.</p>';
+const hamburgerElement = document.querySelector('#myButton');
+const navElement = document.querySelector('#animateme');
+if (hamburgerElement && navElement) {
+  hamburgerElement.addEventListener('click', () => {
+    navElement.classList.toggle('open');
+    hamburgerElement.classList.toggle('open');
   });
-
-// Footer dinámico
-document.getElementById('last-modified').textContent =
-  "Última modificación: " + document.lastModified;
-
-document.getElementById('copyright-year').textContent =
-  new Date().getFullYear();
+}
