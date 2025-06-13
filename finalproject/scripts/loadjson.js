@@ -7,19 +7,28 @@ document.addEventListener("DOMContentLoaded", () => {
       return response.json();
     })
     .then(data => {
-      displayFlag(data.flag);
-      displayDiameter(data.diameter);
+      // Creamos un contenedor especial para himno, bandera y diámetro
+      const topSection = document.createElement("div");
+      topSection.classList.add("top-section");
+      main.appendChild(topSection);
+
+      // Insertamos himno, bandera y diámetro DENTRO de topSection
+      displayAnthem(data.culture.anthem, topSection);
+      displayFlag(data.flag, topSection);
+      displayDiameter(data.diameter, topSection);
+
+      // Las otras secciones van directamente debajo de topSection
       displaySection("Typical Drinks", data.typicalDrinks);
       displaySection("Typical Dances", data.typicalDances);
       displaySection("Typical Foods", data.typicalFood);
-      displayAnthem(data.culture.anthem);
     })
     .catch(error => {
       console.error("Error loading data:", error);
       main.innerHTML = "<p>Content could not be loaded.</p>";
     });
 
-  function displayFlag(flagData) {
+  // ✅ Bandera
+  function displayFlag(flagData, container) {
     const section = document.createElement("section");
     section.classList.add("flag");
 
@@ -37,10 +46,11 @@ document.addEventListener("DOMContentLoaded", () => {
     section.appendChild(title);
     section.appendChild(img);
     section.appendChild(desc);
-    main.appendChild(section);
+    container.appendChild(section);
   }
 
-  function displayDiameter(diameterData) {
+  // ✅ Diámetro
+  function displayDiameter(diameterData, container) {
     const section = document.createElement("section");
     section.classList.add("diameter");
 
@@ -52,42 +62,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     section.appendChild(title);
     section.appendChild(desc);
-    main.appendChild(section);
+    container.appendChild(section);
   }
 
-  function displaySection(titleText, items) {
-    const section = document.createElement("section");
-    section.classList.add("info-section");
-
-    const title = document.createElement("h2");
-    title.textContent = titleText;
-    section.appendChild(title);
-
-    items.forEach(item => {
-      const card = document.createElement("div");
-      card.classList.add("card");
-
-      const img = document.createElement("img");
-      img.src = item.image;
-      img.alt = item.alt;
-      img.loading = "lazy";
-
-      const name = document.createElement("h3");
-      name.textContent = item.name;
-
-      const desc = document.createElement("p");
-      desc.textContent = item.description;
-
-      card.appendChild(img);
-      card.appendChild(name);
-      card.appendChild(desc);
-      section.appendChild(card);
-    });
-
-    main.appendChild(section);
-  }
-
-  function displayAnthem(anthemData) {
+  // ✅ Himno
+  function displayAnthem(anthemData, container) {
     const section = document.createElement("section");
     section.classList.add("anthem");
 
@@ -103,10 +82,48 @@ document.addEventListener("DOMContentLoaded", () => {
 
     section.appendChild(title);
     section.appendChild(iframe);
-    main.appendChild(section);
+    container.appendChild(section);
   }
 
-  // Footer: current year and last modified
+  // ✅ Otras secciones (bebidas, comidas, bailes)
+  function displaySection(titleText, items) {
+  const section = document.createElement("section");
+  section.classList.add("info-section");
+
+  const title = document.createElement("h2");
+  title.textContent = titleText;
+  section.appendChild(title);
+
+  const cardsContainer = document.createElement("div");
+  cardsContainer.classList.add("cards-container");
+
+  items.forEach(item => {
+    const card = document.createElement("div");
+    card.classList.add("card");
+
+    const img = document.createElement("img");
+    img.src = item.image;
+    img.alt = item.alt;
+    img.loading = "lazy";
+
+    const name = document.createElement("h3");
+    name.textContent = item.name;
+
+    const desc = document.createElement("p");
+    desc.textContent = item.description;
+
+    card.appendChild(img);
+    card.appendChild(name);
+    card.appendChild(desc);
+    cardsContainer.appendChild(card);
+  });
+
+  section.appendChild(cardsContainer);
+  main.appendChild(section);
+}
+
+
+  // ✅ Footer automático
   document.getElementById("copyright-year").textContent =
     new Date().getFullYear();
 
