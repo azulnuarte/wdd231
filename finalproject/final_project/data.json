@@ -1,0 +1,97 @@
+{
+  "flag": {
+    "title": "Argentinian Flag",
+    "image": "images/flag.jpg",
+    "alt": "Argentinian flag",
+    "description": "The Argentine flag was created by Manuel Belgrano on February 27, 1812, during the struggle for independence. It was inspired by the colors of the national cockade: light blue and white, symbolizing the sky and the fight for freedom. It was hoisted for the first time on the banks of the Paraná River, in the city of Rosario. It was officially adopted as the national flag in 1816, and in 1818 the sun was added in the center, called Sol de Mayo, symbol of freedom and the birth of a new nation."
+  },
+  "diameter": {
+    "title": "Diameter",
+    "description": "The maximum diameter of Argentina, considering the greatest distance in a straight line within the continental territory, is approximately 3,700 km:\n\nFrom north to south (from La Quiaca, Jujuy to Cape San Pío, Tierra del Fuego): about 3,650 km.\nFrom east to west (from the province of Misiones to the Andes mountain range in Mendoza or San Juan): about 1,400 km.\n\nThis vast territory makes Argentina the eighth largest country in the world and the second largest in South America, after Brazil."
+  },
+  "typicalDrinks": [
+    {
+      "name": "Mate",
+      "image": "images/mate.jpg",
+      "alt": "Mate drink",
+      "description": "Mate is a traditional Argentine infusion made with yerba mate and hot water, drunk with a bombilla. Its origin dates back to the Guarani people, and over time it became a symbol of friendship and culture throughout the Southern Cone."
+    },
+    {
+      "name": "Tereré",
+      "image": "images/terere.webp",
+      "alt": "Tereré drink",
+      "description": "Tereré is a traditional drink from northern Argentina, similar to mate, but prepared with cold water (sometimes with juice) and yerba mate. It has Guarani origins and is popular especially in hot climates, being a symbol of freshness and community."
+    },
+    {
+      "name": "Submarino",
+      "image": "images/submarino.jpg",
+      "alt": "Submarino drink",
+      "description": "The submarine is an Argentine drink made with hot milk and a chocolate bar that melts when submerged, forming a sweet and creamy infusion. It emerged as a fun way to drink chocolate milk, popular among young and old."
+    }
+  ],
+  "typicalDances": [
+    {
+      "name": "Chacarera",
+      "image": "images/chacarera.jpg",
+      "alt": "Chacarera dance",
+      "description": "The chacarera is an Argentine folk dance from Santiago del Estero. Cheerful and lively, it is danced in couples and reflects the identity of the countryside and the culture of northern Argentina."
+    },
+    {
+      "name": "Zamba",
+      "image": "images/zamba.jpg",
+      "alt": "Zamba dance",
+      "description": "The zamba is a romantic and elegant dance, a symbol of Argentine folklore. It is danced with handkerchiefs in hand, representing a delicate game of seduction. It comes from the northwest and has Andean and Spanish influences."
+    },
+    {
+      "name": "Cueca",
+      "image": "images/cueca.jpg",
+      "alt": "Cueca dance",
+      "description": "The cueca is a traditional dance shared by several countries of the Southern Cone. In Argentina, especially in Cuyo, it is danced with handkerchief and footwork, showing Hispanic-American heritage and regional spirit."
+    },
+    {
+      "name": "Gato",
+      "image": "images/gato.jpg",
+      "alt": "Gato dance",
+      "description": "The gato is a popular Argentine dance with an agile and festive rhythm. It is danced in couples with footwork and turns, and has colonial roots, being one of the oldest Creole dances in the country."
+    }
+  ],
+  "typicalFood": [
+    {
+      "name": "Asado",
+      "image": "images/asado.jpg",
+      "alt": "Asado dish",
+      "description": "Asado is the Argentinean culinary tradition par excellence, based on the grill where beef is cooked slowly over a fire. It was first eaten by the gauchos in the pampas and today it is a symbol of reunion and celebration."
+    },
+    {
+      "name": "Empanadas",
+      "image": "images/empanadas.jpg",
+      "alt": "Empanadas dish",
+      "description": "Empanadas are stuffed dough, typical of the whole country, with colonial origins and possibly Arab influences. They vary according to the region in fillings and shapes, and are a very popular dish at meals and celebrations."
+    },
+    {
+      "name": "Locro",
+      "image": "images/locro.jpg",
+      "alt": "Locro dish",
+      "description": "Locro is a thick and nutritious stew made with corn, pumpkin, meat and legumes. It has pre-Columbian indigenous roots and is consumed especially on national holidays as a symbol of national identity."
+    },
+    {
+      "name": "Matambre a la pizza",
+      "image": "images/malp.jpg",
+      "alt": "Matambre a la pizza dish",
+      "description": "Matambre a la pizza is an Argentinean dish that combines a thin cut of meat (matambre) with tomato sauce, cheese and oregano, au gratin pizza style. It is a fusion of the Argentine tradition with the Italian influence in the local gastronomy."
+    }
+  ],
+ "culture": {
+  "anthem": {
+    "title": "National Argentinian Anthem",
+    "video": {
+      "url": "https://www.youtube.com/embed/0XK5NnP1U_0",
+      "width": 560,
+      "height": 315,
+      "allow": "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
+      "allowfullscreen": true
+    }
+  }
+}
+}
+    
