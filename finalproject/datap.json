@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Iguazu Falls",
+    "image": "iguazu.jpg",
+    "description": "Iguazu Falls is one of the most stunning natural wonders in the world, located in the subtropical rainforest of northern Argentina. This massive system of waterfalls offers breathtaking views and is a UNESCO World Heritage Site."
+  },
+  {
+    "name": "Buenos Aires",
+    "image": "buenosaires.jpg",
+    "description": "The capital city of Argentina, Buenos Aires is known for its rich cultural life, European-style architecture, vibrant tango music, and diverse neighborhoods like La Boca and Palermo."
+  },
+  {
+    "name": "Bariloche",
+    "image": "bariloche.jpg",
+    "description": "Located in the Patagonia region, Bariloche is famous for its snow-capped mountains, crystal-clear lakes, and delicious chocolate. It's a popular destination for skiing in winter and hiking in summer."
+  },
+  {
+    "name": "Mendoza",
+    "image": "mendoza.jpg",
+    "description": "Mendoza is the heart of Argentina’s wine country. Visitors come to enjoy world-class Malbec wines, tour vineyards, and admire views of the Andes Mountains."
+  },
+  {
+    "name": "Ushuaia",
+    "image": "ushuaia.jpg",
+    "description": "Often called 'The End of the World,' Ushuaia is the southernmost city in the world. It offers stunning views, access to Tierra del Fuego National Park, and cruises to Antarctica."
+  },
+  {
+    "name": "Salta",
+    "image": "salta.jpg",
+    "description": "Salta is known for its colonial architecture, colorful landscapes, and cultural richness. It’s a gateway to the beautiful northwest region of Argentina with mountains and valleys."
+  },
+  {
+    "name": "El Calafate",
+    "image": "calafate.jpg",
+    "description": "El Calafate is home to the famous Perito Moreno Glacier, one of the few glaciers in the world that is still growing. It’s a must-visit for lovers of nature and ice trekking."
+  }
+]
