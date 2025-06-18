@@ -259,3 +259,47 @@ h2, h1 {
     font-size: 1.4rem;
   }
 }
+/* ========== RESPONSIVE FIXES PARA FLAG, DIAMETER Y ANTHEM ========== */
+
+.top-section section {
+  flex: 1 1 300px;
+  max-width: 100%;
+}
+
+.flag img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Ajustes responsivos para el iframe del himno */
+.anthem iframe {
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Reforzamos que los textos dentro de diameter y otras secciones no desborden */
+.diameter p,
+.flag p,
+.anthem p {
+  word-wrap: break-word;
+  font-size: 1rem;
+}
+
+/* Responsive general para la top-section */
+@media (max-width: 600px) {
+  .top-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top-section section {
+    width: 100%;
+    max-width: 100%;
+  }
+}
