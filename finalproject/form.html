@@ -1,0 +1,52 @@
+<!-- === Join Argentina Culture Form === -->
+<section class="join-section">
+  <h1>Join Our Argentina Culture Community</h1>
+
+  <!-- Reemplaza "#" por la URL o script que recibirá los datos -->
+  <form action="#" method="post" id="joinForm" novalidate>
+    <fieldset>
+      <legend>Tell us about you</legend>
+
+      <label for="firstName">First Name<span aria-hidden="true">*</span></label>
+      <input type="text" id="firstName" name="firstName" required autocomplete="given-name">
+
+      <label for="lastName">Last Name<span aria-hidden="true">*</span></label>
+      <input type="text" id="lastName" name="lastName" required autocomplete="family-name">
+
+      <label for="email">Email<span aria-hidden="true">*</span></label>
+      <input type="email" id="email" name="email" required autocomplete="email">
+
+      <label for="country">Country of Residence</label>
+      <input type="text" id="country" name="country" placeholder="e.g. Argentina">
+
+      <label for="favorite">Favorite Aspect of Argentine Culture</label>
+      <select id="favorite" name="favorite">
+        <option value="">— Select one —</option>
+        <option value="drinks">Drinks (Mate, Malbec…)</option>
+        <option value="dances">Dances (Tango, Chacarera…)</option>
+        <option value="foods">Foods (Empanadas, Asado…)</option>
+        <option value="landscapes">Landscapes (Iguazú Falls, Patagonia…)</option>
+        <option value="music">Music</option>
+      </select>
+
+      <label for="comments">Comments / Suggestions</label>
+      <textarea id="comments" name="comments" rows="4" placeholder="Share your thoughts…"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>Stay in touch</legend>
+
+      <label class="checkbox">
+        <input type="checkbox" id="newsletter" name="newsletter" value="yes" checked>
+        Subscribe me to the monthly culture newsletter
+      </label>
+
+      <label class="checkbox">
+        <input type="checkbox" id="events" name="events" value="yes">
+        Notify me about upcoming virtual events
+      </label>
+    </fieldset>
+
+    <button type="submit">Send</button>
+  </form>
+</section>
