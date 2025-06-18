@@ -24,6 +24,7 @@ body {
   padding: 0;
   line-height: 1.6;
   background-color: var(--main-bg);
+  font-size: clamp(1rem, 1vw + 0.5rem, 1.1rem);
 }
 
 header {
@@ -41,7 +42,6 @@ header img {
   border-radius: 50%;
 }
 
-
 .branding {
   flex-grow: 1;
   margin-left: 1rem;
@@ -58,8 +58,7 @@ header img {
   color: var(--decorative);
 }
 
-
-/* NAV */
+/* NAV (sin cambios, pedido por la usuaria) */
 nav {
   background-color: var(--decorative);
   padding: 0.5rem;
@@ -75,27 +74,27 @@ nav {
   justify-content: center;
 }
 
-nav ul{
-    overflow: hidden;
+nav ul {
+  overflow: hidden;
 }
 
-nav.open{
-    grid-template-rows: 1fr;
+nav.open {
+  grid-template-rows: 1fr;
 }
 
-#myButton{
-  font-size:2rem;
-  background:none;
-  border:none;
-  color:#ffffff;
-  cursor:pointer;
-  width:100%;
-  text-align:right;
-  padding:.25rem 2vw;
+#myButton {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  width: 100%;
+  text-align: right;
+  padding: .25rem 2vw;
 }
 
-#myButton::before{
-  content:"=";
+#myButton::before {
+  content: "=";
 }
 
 .menuLinks a {
@@ -104,23 +103,23 @@ nav.open{
   font-weight: 500;
 }
 
+ul.menuLinks li a {
+  display: block;
+  padding: .75rem 2vw;
+  color: #fff;
+  text-decoration: none;
+}
 
-ul.menuLinks li a{
-  display:block;
-  padding:.75rem 2vw;
-  color:#fff;
-  text-decoration:none;
+ul.menuLinks {
+  list-style-type: none;
 }
-ul.menuLinks{
-  
-  list-style-type:none;
-}
+
 .menuLinks .current-menu-item a {
   border-bottom: 2px solid var(--accent);
 }
 
-#myButton.open::before{
-  content:"x";
+#myButton.open::before {
+  content: "x";
 }
 
 /* FOOTER */
@@ -145,10 +144,10 @@ footer {
   margin: 0 5px;
 }
 
-/* Sección de información con cards lado a lado */
+/* Sección de información con cards */
 .info-section {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1rem;
   justify-content: center;
   margin: 2rem auto;
@@ -156,13 +155,11 @@ footer {
   max-width: 1200px;
 }
 
-/* Estilo de cada card */
 .card {
   background-color: white;
   border: 1px solid var(--decorative);
   border-radius: 10px;
   padding: 1rem;
-  width: 280px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
@@ -185,9 +182,10 @@ footer {
   color: var(--text);
 }
 
+/* top-section igual a info-section en comportamiento */
 .top-section {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
   justify-content: center;
   margin: 2rem auto;
@@ -195,7 +193,6 @@ footer {
 }
 
 .top-section section {
-  flex: 1 1 300px;
   background-color: white;
   padding: 1rem;
   border: 1px solid var(--decorative);
@@ -203,30 +200,62 @@ footer {
   box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
 }
 
-.info-section {
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 1rem;
-}
-
-.info-section h2 {
-  text-align: center;
-  color: var(--titles);
-  margin-bottom: 1rem;
-  
-}
-
-/* contenedor que sí usa flex para alinear tarjetas */
+/* Container para otras tarjetas si es necesario */
 .cards-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1rem;
   justify-content: center;
-  margin-top: 4rem;
+  margin: 4rem auto;
+  max-width: 1200px;
 }
 
-h2, h1{
+h2, h1 {
   text-align: center;
   color: var(--titles);
   margin-bottom: 1rem;
+  font-size: clamp(1.5rem, 2vw + 0.5rem, 2.5rem);
+}
+
+/* MEDIA QUERIES PARA RESPONSIVIDAD */
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-left, .footer-center, .footer-right {
+    flex: 1 1 100%;
+    margin: 1rem 0;
+  }
+
+  .card img {
+    height: 160px;
+  }
+
+  #myButton {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 0.75rem;
+  }
+
+  .card img {
+    height: 140px;
+  }
+
+  body {
+    font-size: 0.95rem;
+  }
+
+  footer {
+    padding: 1rem;
+  }
+
+  h1, h2 {
+    font-size: 1.4rem;
+  }
 }
