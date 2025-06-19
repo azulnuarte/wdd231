@@ -1,14 +1,13 @@
-/* thanks.css */
-body {
+/* Aplica solo si el <body> tiene class="thanks" */
+body.thanks {
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", sans-serif;
   background-color: #f5f5f5;
   color: #333;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
 }
 
 .thankyou-container {
@@ -44,4 +43,5 @@ p {
 .back-home:hover {
   background-color: #163046;
 }
+
 
