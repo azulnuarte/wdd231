@@ -1,5 +1,5 @@
-/* Aplica solo si el <body> tiene class="thanks" */
-body.thanks {
+
+body {
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", sans-serif;
