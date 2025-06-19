@@ -1,5 +1,5 @@
 async function loadPlaces() {
-  const response = await fetch('scripts/datap.json');
+  const response = await fetch('datap.json');
   const places = await response.json();
 
   const container = document.querySelector('#places-container');
