@@ -205,6 +205,15 @@ h2, h1 {
   word-wrap: break-word;
   font-size: 1rem;
 }
+.diameter img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin: 1rem 0;
+  display: block;
+}
+
 
 /* CONTENEDOR DE CARDS CON GRID RESPONSIVO */
 .cards-container {
