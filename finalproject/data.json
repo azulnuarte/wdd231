@@ -6,12 +6,13 @@
     "description": "The Argentine flag was created by Manuel Belgrano on February 27, 1812, during the struggle for independence. It was inspired by the colors of the national cockade: light blue and white, symbolizing the sky and the fight for freedom. It was hoisted for the first time on the banks of the Paraná River, in the city of Rosario. It was officially adopted as the national flag in 1816, and in 1818 the sun was added in the center, called Sol de Mayo, symbol of freedom and the birth of a new nation."
   },
 
-  "diameter": {
-    "title": "Diameter",
-    "image": "images/map.webp",
-    "alt": "Map of Argentina showing its maximum diameter",
-    "description": "The maximum diameter of Argentina, considering the greatest distance in a straight line within the continental territory, is approximately 3,700 km:\n\nFrom north to south (from La Quiaca, Jujuy to Cape San Pío, Tierra del Fuego): about 3,650 km.\nFrom east to west (from the province of Misiones to the Andes mountain range in Mendoza or San Juan): about 1,400 km.\n\nThis vast territory makes Argentina the eighth largest country in the world and the second largest in South America, after Brazil."
-  },
+ "diameter": {
+  "title": "Diameter",
+  "image": "images/map.webp",
+  "alt": "Map of Argentina showing its maximum diameter",
+  "description": "The maximum diameter of Argentina, considering the greatest distance in a straight line within the continental territory, is approximately 3,700 km:\n\nFrom north to south (from La Quiaca, Jujuy to Cape San Pío, Tierra del Fuego): about 3,650 km.\nFrom east to west (from the province of Misiones to the Andes mountain range in Mendoza or San Juan): about 1,400 km.\n\nThis vast territory makes Argentina the eighth largest country in the world and the second largest in South America, after Brazil."
+},
+
 
   "typicalDrinks": [
     {
