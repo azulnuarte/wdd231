@@ -27,7 +27,14 @@
       "image": "images/submarino.jpg",
       "alt": "Submarino drink",
       "description": "The submarine is an Argentine drink made with hot milk and a chocolate bar that melts when submerged, forming a sweet and creamy infusion. It emerged as a fun way to drink chocolate milk, popular among young and old."
-    }
+    },
+    {
+  "name": "Caña con ruda",
+  "image": "cañaruda.webp",
+  "alt": "Small glass bottle of caña con ruda with herbs inside",
+  "description": "Caña con ruda is a traditional Argentine drink made by infusing cane liquor with ruda (rue herb). It is consumed especially on August 1st in the northern provinces as a ritual to ward off illness and attract health and good luck. It carries deep cultural and ancestral significance."
+  }
+
   ],
   "typicalDances": [
     {
