@@ -205,6 +205,7 @@ h2, h1 {
   word-wrap: break-word;
   font-size: 1rem;
 }
+
 .diameter img {
   width: 100%;
   max-width: 100%;
@@ -212,6 +213,7 @@ h2, h1 {
   border-radius: 6px;
   margin: 1rem 0;
   display: block;
+  object-fit: contain;
 }
 
 
@@ -241,7 +243,6 @@ h2, h1 {
   color: var(--titles);
   text-align: center;
 }
-
 
 
 /* Estilo de las cards */
