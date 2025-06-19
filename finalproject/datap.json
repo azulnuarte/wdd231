@@ -45,49 +45,49 @@
   {
     "name": "Quebrada de Humahuaca",
     "location": "Jujuy",
-    "image": "images/humahuaca.jpg",
+    "image": "humahuaca.jpg",
     "description": "A colorful valley in northern Argentina, rich in indigenous culture and colonial history. Home to the Hill of Seven Colors and picturesque towns like Purmamarca and Tilcara."
   },
   {
     "name": "Talampaya National Park",
     "location": "La Rioja",
-    "image": "images/talampaya.jpg",
+    "image": "talampaya.jpg",
     "description": "A UNESCO World Heritage Site known for its red sandstone canyons, rock formations, and archaeological remains."
   },
   {
     "name": "Iberá Wetlands",
     "location": "Corrientes",
-    "image": "images/ibera.jpg",
+    "image": "ibera.jpg",
     "description": "One of the largest wetlands in the world, ideal for wildlife watching, including capybaras, marsh deer, and caimans."
   },
   {
     "name": "El Chaltén",
     "location": "Santa Cruz",
-    "image": "images/chalten.jpg",
+    "image": "chalten.jpg",
     "description": "A charming mountain village known as Argentina’s trekking capital, offering trails with stunning views of Mount Fitz Roy."
   },
   {
     "name": "Sierra de la Ventana",
     "location": "Buenos Aires Province",
-    "image": "images/sierra_ventana.jpg",
+    "image": "sierra_ventana.jpg",
     "description": "A scenic area with rolling hills, caves, and hiking paths. It’s a peaceful getaway in the province of Buenos Aires."
   },
   {
     "name": "Valle de la Luna (Ischigualasto)",
     "location": "San Juan",
-    "image": "images/valle_luna.jpg",
+    "image": "valle_luna.jpg",
     "description": "A lunar-like landscape filled with unique rock formations and one of the world's most important paleontological sites."
   },
   {
     "name": "San Martín de los Andes",
     "location": "Neuquén",
-    "image": "images/sanmartin.jpg",
+    "image": "sanmartin.jpeg",
     "description": "A picturesque town on the shores of Lake Lácar, surrounded by forests and mountains. Great for skiing, hiking, and relaxing."
   },
   {
     "name": "Cafayate",
     "location": "Salta",
-    "image": "images/cafayate.jpg",
+    "image": "cafayate.jpg",
     "description": "A wine-producing town famous for Torrontés white wine, surrounded by breathtaking desert landscapes and rock formations."
   }
 ]
