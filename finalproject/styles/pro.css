@@ -206,23 +206,33 @@ h2, h1 {
   font-size: 1rem;
 }
 
-/* INFO SECTIONS (comidas, bebidas, bailes) */
-.info-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 2rem 0;
-  padding: 1rem;
-}
-
-/* Contenedor de tarjetas */
+/* CONTENEDOR DE CARDS CON GRID RESPONSIVO */
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
   width: 100%;
   justify-items: center;
 }
+
+/* SECCIÓN DE GRUPOS COMO 'DANCES', 'FOODS', ETC. */
+.info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 0;
+  padding: 1rem;
+  border-top: 2px solid var(--decorative);
+}
+
+/* TÍTULOS DE SECCIONES DE CARDS */
+.info-section h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: var(--titles);
+  text-align: center;
+}
+
 
 
 /* Estilo de las cards */
