@@ -11,16 +11,21 @@ async function loadPlaces() {
     const img = document.createElement('img');
     img.src = `images/${place.image}`;
     img.alt = place.name;
-    img.loading = "lazy"; // ✅ Lazy loading agregado
+    img.loading = "lazy";
 
     const title = document.createElement('h2');
     title.textContent = place.name;
+
+    const location = document.createElement('p');
+    location.textContent = `Location: ${place.location}`;
+    location.classList.add('location');
 
     const desc = document.createElement('p');
     desc.textContent = place.description;
 
     card.appendChild(img);
     card.appendChild(title);
+    card.appendChild(location); 
     card.appendChild(desc);
 
     container.appendChild(card);
