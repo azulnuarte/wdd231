@@ -1,37 +1,94 @@
 [
   {
     "name": "Iguazu Falls",
+    "location": "Misiones",
     "image": "iguazu.jpg",
     "description": "Iguazu Falls is one of the most stunning natural wonders in the world, located in the subtropical rainforest of northern Argentina. This massive system of waterfalls offers breathtaking views and is a UNESCO World Heritage Site."
   },
   {
     "name": "Buenos Aires",
+    "location": "Buenos Aires",
     "image": "buenosaires.jpg",
     "description": "The capital city of Argentina, Buenos Aires is known for its rich cultural life, European-style architecture, vibrant tango music, and diverse neighborhoods like La Boca and Palermo."
   },
   {
     "name": "Bariloche",
+    "location": "Río Negro",
     "image": "bariloche.jpg",
     "description": "Located in the Patagonia region, Bariloche is famous for its snow-capped mountains, crystal-clear lakes, and delicious chocolate. It's a popular destination for skiing in winter and hiking in summer."
   },
   {
     "name": "Mendoza",
+    "location": "Mendoza",
     "image": "mendoza.jpg",
     "description": "Mendoza is the heart of Argentina’s wine country. Visitors come to enjoy world-class Malbec wines, tour vineyards, and admire views of the Andes Mountains."
   },
   {
     "name": "Ushuaia",
+    "location": "Tierra del Fuego",
     "image": "ushuaia.jpeg",
     "description": "Often called 'The End of the World,' Ushuaia is the southernmost city in the world. It offers stunning views, access to Tierra del Fuego National Park, and cruises to Antarctica."
   },
   {
     "name": "Salta",
+    "location": "Salta",
     "image": "salta.jpg",
     "description": "Salta is known for its colonial architecture, colorful landscapes, and cultural richness. It’s a gateway to the beautiful northwest region of Argentina with mountains and valleys."
   },
   {
     "name": "El Calafate",
+    "location": "Santa Cruz",
     "image": "calafate.jpg",
     "description": "El Calafate is home to the famous Perito Moreno Glacier, one of the few glaciers in the world that is still growing. It’s a must-visit for lovers of nature and ice trekking."
+  },
+
+  {
+    "name": "Quebrada de Humahuaca",
+    "location": "Jujuy",
+    "image": "images/humahuaca.jpg",
+    "description": "A colorful valley in northern Argentina, rich in indigenous culture and colonial history. Home to the Hill of Seven Colors and picturesque towns like Purmamarca and Tilcara."
+  },
+  {
+    "name": "Talampaya National Park",
+    "location": "La Rioja",
+    "image": "images/talampaya.jpg",
+    "description": "A UNESCO World Heritage Site known for its red sandstone canyons, rock formations, and archaeological remains."
+  },
+  {
+    "name": "Iberá Wetlands",
+    "location": "Corrientes",
+    "image": "images/ibera.jpg",
+    "description": "One of the largest wetlands in the world, ideal for wildlife watching, including capybaras, marsh deer, and caimans."
+  },
+  {
+    "name": "El Chaltén",
+    "location": "Santa Cruz",
+    "image": "images/chalten.jpg",
+    "description": "A charming mountain village known as Argentina’s trekking capital, offering trails with stunning views of Mount Fitz Roy."
+  },
+  {
+    "name": "Sierra de la Ventana",
+    "location": "Buenos Aires Province",
+    "image": "images/sierra_ventana.jpg",
+    "description": "A scenic area with rolling hills, caves, and hiking paths. It’s a peaceful getaway in the province of Buenos Aires."
+  },
+  {
+    "name": "Valle de la Luna (Ischigualasto)",
+    "location": "San Juan",
+    "image": "images/valle_luna.jpg",
+    "description": "A lunar-like landscape filled with unique rock formations and one of the world's most important paleontological sites."
+  },
+  {
+    "name": "San Martín de los Andes",
+    "location": "Neuquén",
+    "image": "images/sanmartin.jpg",
+    "description": "A picturesque town on the shores of Lake Lácar, surrounded by forests and mountains. Great for skiing, hiking, and relaxing."
+  },
+  {
+    "name": "Cafayate",
+    "location": "Salta",
+    "image": "images/cafayate.jpg",
+    "description": "A wine-producing town famous for Torrontés white wine, surrounded by breathtaking desert landscapes and rock formations."
   }
 ]
+
