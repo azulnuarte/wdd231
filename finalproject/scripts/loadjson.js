@@ -51,19 +51,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ✅ Diámetro
   function displayDiameter(diameterData, container) {
-    const section = document.createElement("section");
-    section.classList.add("diameter");
+  const section = document.createElement("section");
+  section.classList.add("diameter");
 
-    const title = document.createElement("h2");
-    title.textContent = diameterData.title;
+  const title = document.createElement("h2");
+  title.textContent = diameterData.title;
 
-    const desc = document.createElement("p");
-    desc.textContent = diameterData.description;
+  const img = document.createElement("img");
+  img.src = diameterData.image;
+  img.alt = diameterData.alt;
+  img.loading = "lazy";
 
-    section.appendChild(title);
-    section.appendChild(desc);
-    container.appendChild(section);
-  }
+  const desc = document.createElement("p");
+  desc.textContent = diameterData.description;
+
+  section.appendChild(title);
+  section.appendChild(img);   // <- imagen justo después del título
+  section.appendChild(desc);
+  container.appendChild(section);
+}
+
 
   // ✅ Himno
   function displayAnthem(anthemData, container) {
