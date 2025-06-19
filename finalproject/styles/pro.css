@@ -206,15 +206,7 @@ h2, h1 {
   font-size: 1rem;
 }
 
-.diameter img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  border-radius: 6px;
-  margin: 1rem 0;
-  display: block;
-  object-fit: contain;
-}
+
 
 
 /* CONTENEDOR DE CARDS CON GRID RESPONSIVO */
