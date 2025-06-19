@@ -42,6 +42,14 @@
     <h1>Thank You!</h1>
     <p>Your submission has been received. We're happy to have you as part of our community.</p>
     <a href="index.html" class="back-home">← Back to Home</a>
+    <script>
+  const params = new URLSearchParams(location.search);
+
+  // ejemplo para nombre ‑ ajusta los ids a tu formulario
+  document.querySelector('#firstNameSpan').textContent = params.get('firstName') || '—';
+  // repite para cada campo
+</script>
+
   </main>
   <footer>
     <div class="footer-left">
