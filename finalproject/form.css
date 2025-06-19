@@ -89,3 +89,42 @@ button[type="submit"]:hover {
     font-size: 1.4rem;
   }
 }
+/* === Modal Styles === */
+.modal {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+  display: none; /* Oculto por defecto */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  position: relative;
+  font-family: inherit;
+  color: var(--titles);
+}
+
+.close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--decorative);
+  cursor: pointer;
+  user-select: none;
+}
+
+.close:hover {
+  color: var(--accent);
+}
+
