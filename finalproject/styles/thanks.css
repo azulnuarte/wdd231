@@ -45,5 +45,19 @@ body {
 main {
   flex: 1;
 }
+.user-data {
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.user-data ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.user-data li {
+  margin-bottom: 0.8rem;
+}
 
 
