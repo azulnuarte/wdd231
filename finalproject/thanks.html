@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Thank You | Voces de mi tierra</title>
+  <meta name="description" content="Thank you page for form submission." />
   <link rel="stylesheet" href="styles/pro.css">
   <link rel="stylesheet" href="styles/large.css">
   <link rel="stylesheet" href="styles/thanks.css">
@@ -21,7 +22,7 @@
     <button id="myButton"></button>
   </header>
 
-  <nav id="animateme">
+  <nav>
     <ul class="menuLinks">
       <li><a href="index.html">Home</a></li>
       <li><a href="places.html">Places</a></li>
@@ -31,29 +32,9 @@
 
   <main class="thankyou-container">
     <h1>Thank You!</h1>
-    <p>We're happy to have you as part of our community.</p>
-
-    <section class="submitted-info">
-      <h2>Your Info</h2>
-      <ul>
-        <li><strong>First Name:</strong> <span id="firstNameSpan">—</span></li>
-        <li><strong>Last Name:</strong> <span id="lastNameSpan">—</span></li>
-        <li><strong>Email:</strong> <span id="emailSpan">—</span></li>
-        <li><strong>Country:</strong> <span id="countrySpan">—</span></li>
-        <li><strong>Favorite:</strong> <span id="favoriteSpan">—</span></li>
-        <li><strong>Comments:</strong> <span id="commentsSpan">—</span></li>
-      </ul>
-    </section>
-
+    <p id="thankMessage">Your submission has been received.</p>
     <a href="index.html" class="back-home">← Back to Home</a>
   </main>
-
-  <!-- Modal -->
-  <dialog id="missingModal">
-    <h2>Oops!</h2>
-    <p>No form data found. Please complete the form first.</p>
-    <button id="closeModal">Close</button>
-  </dialog>
 
   <footer>
     <div class="footer-left">
@@ -71,7 +52,7 @@
     </div>
     <div class="footer-right">
       <p id="last-modified"></p>
-      <p id="year">&copy; <span id="copyright-year"></span></p>
+      <p>&copy; <span id="copyright-year"></span></p>
     </div>
   </footer>
 </body>
