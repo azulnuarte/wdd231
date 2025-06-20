@@ -28,3 +28,24 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+ const params = new URLSearchParams(location.search);
+  const list = document.getElementById('userInfoList');
+
+  const fields = {
+    firstName: 'First Name',
+    lastName: 'Last Name',
+    email: 'Email',
+    country: 'Country of Residence',
+    favorite: 'Favorite Aspect',
+    comments: 'Comments',
+    newsletter: 'Subscribed to Newsletter',
+    events: 'Wants Event Notifications'
+  };
+
+  Object.entries(fields).forEach(([key, label]) => {
+    const value = params.get(key);
+    const display = value ? value : '—';
+    const item = document.createElement('li');
+    item.innerHTML = `<strong>${label}:</strong> ${display}`;
+    list.appendChild(item);
+  });
