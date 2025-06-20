@@ -60,5 +60,27 @@ h1 {
 .back-home:hover {
   background-color: #163046;
 }
+dialog {
+  border: none;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 400px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#closeModal {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #1e3d59;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
 
 
