@@ -1,21 +1,3 @@
-document.getElementById('joinForm').addEventListener('submit', function(e) {
-  // Obtener valores
-  const formData = {
-    firstName: this.firstName.value.trim(),
-    lastName: this.lastName.value.trim(),
-    email: this.email.value.trim(),
-    country: this.country.value.trim(),
-    favorite: this.favorite.value,
-    comments: this.comments.value.trim(),
-    newsletter: this.newsletter.checked ? "Yes" : "No",
-    events: this.events.checked ? "Yes" : "No"
-  };
-
-  // Guardar en localStorage
-  localStorage.setItem('formData', JSON.stringify(formData));
-});
-
-
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('joinForm');
   const modal = document.getElementById('errorModal');
@@ -48,13 +30,16 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    // ✅ Guardar datos en localStorage
+    // ✅ Si todo es válido, guardar en localStorage
     const formData = new FormData(form);
     const userData = {};
     formData.forEach((value, key) => {
       userData[key] = value;
     });
+
     localStorage.setItem('lastJoinData', JSON.stringify(userData));
+    // No hace falta event.preventDefault() aquí porque queremos que se redirija a thanks.html
   });
 });
+
 
