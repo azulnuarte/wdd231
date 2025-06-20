@@ -1,16 +1,12 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const savedData = JSON.parse(localStorage.getItem('formData'));
-  if (!savedData) return; // Si no hay datos guardados, no hacemos nada
+document.addEventListener("DOMContentLoaded", () => {
+  const params = new URLSearchParams(location.search);
 
-  document.getElementById('firstNameSpan').textContent = savedData.firstName || '—';
-  document.getElementById('lastNameSpan').textContent = savedData.lastName || '—';
-  document.getElementById('emailSpan').textContent = savedData.email || '—';
-  document.getElementById('countrySpan').textContent = savedData.country || '—';
-  document.getElementById('favoriteSpan').textContent = savedData.favorite || '—';
-  document.getElementById('commentsSpan').textContent = savedData.comments || '—';
-  document.getElementById('newsletterSpan').textContent = savedData.newsletter || 'No';
-  document.getElementById('eventsSpan').textContent = savedData.events || 'No';
+  const fields = ["firstName", "lastName", "email", "country", "favorite", "comments"];
+  fields.forEach(field => {
+    const value = params.get(field) || "—";
+    document.getElementById(`${field}Span`).textContent = value;
+    localStorage.setItem(field, value); // Guarda en localStorage
+  });
 
-  // Opcional: limpiar localStorage si quieres que no quede guardado
-  // localStorage.removeItem('formData');
+  // Podés revisar localStorage después si necesitás hacer algo con los datos
 });
