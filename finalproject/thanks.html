@@ -3,24 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Voces de mi tierra</title>
-  <meta name="author" content="Azul Nuarte" />
-  <meta name="description" content="This page will help the user to obtain more knowledge about Argentina and the culture of this country." />
+  <title>Thank You | Voces de mi tierra</title>
   <link rel="stylesheet" href="styles/pro.css">
   <link rel="stylesheet" href="styles/large.css">
   <link rel="stylesheet" href="styles/thanks.css">
+  <script src="scripts/proj.js" defer></script>
   <script src="scripts/thanks.js" defer></script>
   <link rel="icon" href="images/favicon.ico"> 
-  <meta property="og:title" content="Voces de mi tierra">
-  <meta property="og:description" content="This page will help the user to obtain more knowledge about Argentina and the culture of this country.">
-  <meta property="og:image" content="https://azulnuarte.github.io/wdd231/finalproject/images/iguazufalls.jpg">
-  <meta property="og:url" content="https://azulnuarte.github.io/wdd231/finalproject/index.html">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Azul Nuarte Portfolio">
-  
 </head>
-<body class="no-header-footer">
+<body>
   <header>
     <img src="images/logo.jpg" alt="Logo Voces de mi tierra" />
     <div class="branding">
@@ -37,8 +28,6 @@
       <li><a href="form.html">Join</a></li>
     </ul>
   </nav>
-
-  <body class="no-header-footer">
 
   <main class="thankyou-container">
     <h1>Thank You!</h1>
@@ -58,6 +47,13 @@
 
     <a href="index.html" class="back-home">← Back to Home</a>
   </main>
+
+  <!-- Modal -->
+  <dialog id="missingModal">
+    <h2>Oops!</h2>
+    <p>No form data found. Please complete the form first.</p>
+    <button id="closeModal">Close</button>
+  </dialog>
 
   <footer>
     <div class="footer-left">
