@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Home page for chamber of commerce project." />
+  <title>Chamber Home</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <button id="menu-btn">☰</button>
+      <ul id="nav-menu" class="hidden">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Directory</a></li>
+        <li><a href="#">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1> Chamber of Commerce Mendoza Argentina </h1>
+
+    <section id="filter-controls">
+      <button data-subject="all">All</button>
+      <button data-subject="web">Web</button>
+      <button data-subject="design">Design</button>
+      <button data-subject="development">Development</button>
+    </section>
+
+    <section id="course-list"></section>
+
+    <section id="summary">
+      <p>Total Credits: <span id="total-credits">0</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Last Modified: <span id="last-modified"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

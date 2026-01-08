@@ -3,92 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="description" content="Professional portfolio highlighting completed certificates and coursework in software and web development. Demonstrates skills in HTML, CSS, JavaScript, Python, and more, as part of BYU-Pathway Worldwide.">
-    <meta name="author" content="Azul Nuarte">
     <title> WDD231 | Azul Nuarte</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 901px)">
-    <link rel="stylesheet" href="styles/small.css" media="screen and (max-width: 900px)">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <meta name ="description" content="Professional portfolio highlighting completed certificates and coursework in software and web development. Demonstrates skills in HTML, CSS, JavaScript, Python, and more, as part of BYU-Pathway Worldwide.">
+    <meta name ="author" content= "Azul Nuarte">
     <script src="scripts/javacript.js" defer></script>
-    <link rel="icon" href="favicon.ico">
-    <!-- Open Graph (Facebook) -->
-    <meta property="og:title" content="WDD231 | Azul Nuarte">
-    <meta property="og:description" content="Professional portfolio showing skills in web development including HTML, CSS, JavaScript, and more. Projects and certifications from BYU-Pathway Worldwide.">
-    <meta property="og:image" content="https://tusitio.com/images/profile.jpg">
-    <meta property="og:url" content="https://tusitio.com/index.html">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Azul Nuarte Portfolio">
-
-<!-- Twitter Cards -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="WDD231 | Azul Nuarte">
-<meta name="twitter:description" content="Professional portfolio showing skills in web development including HTML, CSS, JavaScript, and more. Projects and certifications from BYU-Pathway Worldwide.">
-<meta name="twitter:image" content="https://tusitio.com/images/profile.jpg">
-
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-   <header>
-    <div class="header-top">
-        <img src="images/profile.jpg" alt="profile">
-       <span class="name">Azul Nuarte</span>
-
-    </div>
-    <nav id="navbar">
-        <a href="index.html">Home</a>
-        <a href="chamber/index.html">Chamber</a>
-        <a href="finalproject/index.html">Final</a>
-        <a href="#">GitHub Profile</a>
-        <a href="www.linkedin.com/in/azul-nuarte-904334261">LinkedIn</a>
-    </nav>
-    <button class="menu-toggle" id="menu-toggle">&#9776;</button> <!-- Icono de menú hamburguesa -->
-</header>
-
+    <header>
+        <button class="menu-toggle">☰</button>
+    
+        <span> Azul Nuarte </span>
+    
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="chamber.html">Chamber</a>
+            <a href="final.html">Final</a>
+        </nav>
+    </header>
     
     <main>
-        <h1> WDD231 | Azul Nuarte</h1>
-        <div class="main-sections">
-            <section class="work">
-                <h2>Course Work</h2>
-                <ul>
-                    <li>CSE 110</li>
-                    <li>WDD 130</li>
-                    <li>CSE 111</li>
-                    <li>CSE 210</li>
-                    <li>WDD 131</li>
-                    <li>WDD 231</li>
-                </ul>
-            </section>
-        
-            <section class="ubication">
-                <h2>Mendoza, Argentina</h2>
-                <img src="images/mendoza.jpg" alt="Mendoza, Argentina">
-                <p>Mendoza City</p>
-            </section>
-        </div>
-        
+        <h1> Home </h1>
+        <div class="about-container">
 
-        <section class="certificate">
-            <h2>Web and Computer Programming Certificate</h2>
+            <section class="me">
+                <h2>About Me</h2>
+                <p>
+                    My name is Azul, and I am a Software Development student at Brigham Young University–Idaho through BYU–Pathway Worldwide. I am passionate about technology and enjoy learning how to build functional and user-friendly digital solutions.
+        
+                    During my studies, I have gained experience working with HTML, CSS, and JavaScript, focusing on creating structured, responsive, and visually appealing web pages. I enjoy turning ideas into interactive websites and continuously improving my skills through hands-on projects.
+        
+                    I consider myself a motivated, responsible, and detail-oriented student who is always eager to learn and grow. My goal is to continue developing my skills in software development and contribute to meaningful projects in the future.
+                </p>
+            </section>
+        
+            <section class="photo">
+                <h2>Student Photo</h2>
+                <img src="images/profile.jpg" alt="My Photo">
+            </section>
+        
+        </div>
+        <section class="courses">
+            <h2> Web Certificate Courses  </h2>
             <div class="filters">
-              <button>All</button>
-              <button>CSE</button>
-              <button>WDD</button>
-            </div>
-            <div class="courses">
-              <!-- Aquí se agregarán los cursos dinámicamente -->
-            </div>
-          </section>
-          
+                <button>All</button>
+                <button>CSE</button>
+                <button>WDD</button>
+              </div>
+              <div class="courses">
+              </div>
+        </section>
     </main>
     <footer>
-      <p id="year">© <span id="copyright-year"></span> 💙Azul Agustina Nuarte💙 Mendoza</p>
-      <p id="last-modified"></p>
-      <img src="images/argentina.png" alt="Argentina Flag" class="flag">
-    </footer>
-
+        <div class="footer-left">
+          WDD231 Project<br>
+          Azul Nuarte<br>
+          Mendoza, Argentina<br>
+        </div>
+        <div class="footer-center">
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><img src="images/faceicon.png" alt="Facebook icon"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twicon.png" alt="Twitter icon"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/igicon.png" alt="Instagram icon"></a>
+          </div>
+        </div>
+        <div class="footer-right">
+          <p id="last-modified"></p>
+          <p id="year">&copy; <span id="copyright-year"></span></p>
+        </div>
+      </footer>
 </body>
 </html>
