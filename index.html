@@ -3,75 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> WDD231 | Azul Nuarte</title>
-    <meta name ="description" content="Professional portfolio highlighting completed certificates and coursework in software and web development. Demonstrates skills in HTML, CSS, JavaScript, Python, and more, as part of BYU-Pathway Worldwide.">
-    <meta name ="author" content= "Azul Nuarte">
-    <script src="scripts/main.js" defer></script>
-    <script src="scripts/javacript.js" defer></script>
+    <title>WDD231 | Azul Nuarte</title>
+
+    <meta name="description" content="Professional portfolio highlighting completed certificates and coursework in software and web development.">
+    <meta name="author" content="Azul Nuarte">
+
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/javascript.js" defer></script>
 </head>
+
 <body>
     <header>
         <button class="menu-toggle">☰</button>
-    
-        <span> Azul Nuarte </span>
-    
+        <h1>Azul Nuarte</h1>
+
         <nav>
             <a href="index.html">Home</a>
             <a href="chamber.html">Chamber</a>
             <a href="final.html">Final</a>
         </nav>
     </header>
-    
-    <main>
-        <h1> Home </h1>
-        <div class="about-container">
 
+    <main>
+        <h1>Home</h1>
+
+        <div class="about-container">
             <section class="me">
                 <h2>About Me</h2>
                 <p>
                     My name is Azul, and I am a Software Development student at Brigham Young University–Idaho through BYU–Pathway Worldwide. I am passionate about technology and enjoy learning how to build functional and user-friendly digital solutions.
-        
+
                     During my studies, I have gained experience working with HTML, CSS, and JavaScript, focusing on creating structured, responsive, and visually appealing web pages. I enjoy turning ideas into interactive websites and continuously improving my skills through hands-on projects.
-        
+                    
                     I consider myself a motivated, responsible, and detail-oriented student who is always eager to learn and grow. My goal is to continue developing my skills in software development and contribute to meaningful projects in the future.
                 </p>
             </section>
-        
+
             <section class="photo">
                 <h2>Student Photo</h2>
                 <img src="images/profile.jpg" alt="My Photo">
             </section>
+        </div>
+
+        <section class="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
         
-        </div>
-        <section class="courses">
-            <h2> Web Certificate Courses  </h2>
             <div class="filters">
-                <button>All</button>
-                <button>CSE</button>
-                <button>WDD</button>
-              </div>
-              <div class="courses">
-              </div>
+                <button id="all">All Courses</button>
+                <button id="cse">CSE Courses</button>
+                <button id="wdd">WDD Courses</button>
+            </div>
+        
+            <div id="course-cards"></div>
+        
+            <p class="credit-total">
+                Total Credits: <span id="totalCredits"></span>
+            </p>
         </section>
+        
     </main>
+
     <footer>
-        <div class="footer-left">
-          WDD231 Project<br>
-          Azul Nuarte<br>
-          Mendoza, Argentina<br>
-        </div>
+        <p>&copy; <span id="copyright-year"></span> Azul Nuarte</p>
+        <p id="last-modified"></p>
         <div class="footer-center">
-          <div class="social-icons">
-            <a href="https://facebook.com" target="_blank"><img src="images/faceicon.png" alt="Facebook icon"></a>
-            <a href="https://twitter.com" target="_blank"><img src="images/twicon.png" alt="Twitter icon"></a>
-            <a href="https://instagram.com" target="_blank"><img src="images/igicon.png" alt="Instagram icon"></a>
-          </div>
-        </div>
-        <div class="footer-right">
-          <p id="last-modified"></p>
-          <p id="year">&copy; <span id="copyright-year"></span></p>
-        </div>
-      </footer>
+            <div class="social-icons">
+              <a href="https://facebook.com" target="_blank"><img src="images/faceicon.png" alt="Facebook icon"></a>
+              <a href="https://twitter.com" target="_blank"><img src="images/twicon.png" alt="Twitter icon"></a>
+              <a href="https://instagram.com" target="_blank"><img src="images/igicon.png" alt="Instagram icon"></a>
+            </div>
+    </footer>
 </body>
 </html>
