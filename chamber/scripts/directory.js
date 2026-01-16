@@ -1,7 +1,22 @@
 const membersContainer = document.querySelector("#members");
 const gridButton = document.querySelector("#grid");
 const listButton = document.querySelector("#list");
+const menuButton = document.querySelector("#myButton");
+const navigation = document.querySelector("#navigation");
 
+/* MENU */
+menuButton.addEventListener("click", () => {
+  navigation.classList.toggle("open");
+});
+
+/* LAST MODIFIED */
+document.querySelector("#last-modified").textContent =
+  `Last Modified: ${document.lastModified}`;
+
+document.querySelector("#copyright-year").textContent =
+  new Date().getFullYear();
+
+/* MEMBERS */
 async function getMembers() {
   const response = await fetch("data/members.json");
   const members = await response.json();
@@ -39,3 +54,4 @@ listButton.addEventListener("click", () => {
 });
 
 getMembers();
+

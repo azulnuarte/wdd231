@@ -16,7 +16,76 @@ body {
     align-items: center;
     gap: 1rem;
   }
-  
+  /* LOGO */
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+.site-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* HAMBURGER */
+#myButton {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* HERO FIX */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+  object-fit: cover;
+}
+
+.hero h1 {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #myButton {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+  }
+
+  nav.open {
+    display: block;
+  }
+
+  .menuLinks {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
   .menuLinks {
     list-style: none;
     display: flex;
@@ -32,17 +101,15 @@ body {
     text-decoration: underline;
     font-weight: bold;
   }
-  /* HERO */
+  
 .hero {
     position: relative;
-    text-align: center;
-    color: white;
   }
   
   .hero img {
     width: 100%;
     height: auto;
-    max-height: 400px;
+    max-height: 350px;
     object-fit: cover;
   }
   
@@ -52,11 +119,12 @@ body {
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.6);
+    color: white;
     padding: 0.5rem 1rem;
     border-radius: 6px;
-    font-size: 1.8rem;
   }
   
+
   
   /* DIRECTORY */
   .view-toggle {
@@ -83,7 +151,7 @@ body {
   }
   
   .member-card {
-    background-color: #f5f5f5;
+    background-color: #dfe7f5;
     padding: 1rem;
     border-radius: 8px;
     text-align: center;
@@ -93,6 +161,8 @@ body {
     display: grid;
     grid-template-columns: 1fr 2fr;
     text-align: left;
+    padding: 10px;
+    border: solid #8491a3;
   }
   
   #members.list img {
@@ -103,6 +173,7 @@ body {
     max-width: 100px;
     height: auto;
     margin-bottom: 0.5rem;
+
   }
   
   .membership {
