@@ -1,0 +1,37 @@
+.info-sections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1rem;
+  }
+  
+  .info-sections section {
+    background-color: #e6e6e6;
+    padding: 1rem;
+    border-radius: 6px;
+  }
+  @media (max-width: 768px) {
+    .info-sections {
+      grid-template-columns: 1fr;
+    }
+  }
+    
+
+  .info-sections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .info-sections section {
+    background-color: #f4f6f8;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  @media (max-width: 768px) {
+    .info-sections {
+      grid-template-columns: 1fr;
+    }
+  }
+  

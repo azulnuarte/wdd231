@@ -5,14 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Mendoza Chamber of Commerce | Home</title>
-  <meta name="description" content="Home page of the Mendoza Chamber of Commerce">
+  <meta name="description" content="The Mendoza Chamber of Commerce supports local businesses, promotes economic growth, and connects members with opportunities in Mendoza, Argentina.">
   <meta name="author" content="Azul Nuarte">
-
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="styles/styles.css">
-
   <!-- JS DEL HOME -->
   <script src="chamber/scripts/home.js" defer></script>
+  <meta property="og:title" content="Mendoza Chamber of Commerce Home Page">
+  <meta property="og:description" content="Discover how the Mendoza Chamber of Commerce supports local businesses, economic development, and community growth in Mendoza, Argentina.">
+  <meta property="og:image" content="https://azulnuarte.github.io/wdd231/chamber/images/mendoza-hero-125kb.jpg">
+  <meta property="og:image" content="https://azulnuarte.github.io/wdd231/chamber/images/mendoza-hero-125kb.jpg">
+  <meta property="og:url" content="https://azulnuarte.github.io/wdd231/chamber/index.html">
+
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,7 +42,7 @@
 </header>
 
 <main>
-
+   <h1>Chamber of Commerce</h1>
   <!-- HERO -->
   <section class="hero">
     <img src="images/hero.webp" alt="Mendoza landscape">
@@ -46,27 +50,26 @@
   </section>
 
   <section class="info-sections">
-    <!-- EVENTS -->
-    <section class="events">
-      <h2>Current Events</h2>
-      <p>Wine Expo – April 20</p>
-      <p>Business Networking – May 5</p>
-    </section>
-  
-    <!-- WEATHER -->
-    <section class="weather">
-      <h2>Weather</h2>
-      <p id="current-temp"></p>
-      <p id="weather-desc"></p>
-      <ul id="forecast-list"></ul>
-    </section>
+
+  <section class="events">
+    <h2>Events</h2>
+    <p>Wine Expo – April 20</p>
+    <p>Business Networking – May 5</p>
   </section>
-  <!-- MEMBER SPOTLIGHTS -->
-  <section>
-    <h2>Member Spotlights</h2>
-    <!-- ESTA CLASE ES CLAVE PARA EL CSS -->
-    <div id="members" class="grid"></div>
+
+  <section class="weather current-weather">
+    <h2>Current Weather</h2>
+    <p id="current-temp"></p>
+    <p id="weather-desc"></p>
   </section>
+
+  <section class="weather forecast-weather">
+    <h2>Weather Forecast</h2>
+    <ul id="forecast-list"></ul>
+  </section>
+
+</section>
+
 
 </main>
 
