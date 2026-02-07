@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Azul Nuarte">
+  <meta name="description" content="Timbuktu Chamber of Commerce - Your hub for local business resources, events, and networking opportunities.">
+  <meta property="og:title" content="Timbuktu Chamber of Commerce">
+  <meta property="og:description" content="Timbuktu Chamber of Commerce - Your hub for local business resources, events, and networking opportunities.">
+  <meta property="og:image" content="https://azulnuarte.github.io/wdd231/chamber/images/timb.avif">
+  <meta property="og:url" content="https://azulnuarte.github.io/wdd231/chamber/directory.html">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Timbuktu Chamber of Commerce">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+   <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/year.js" defer></script>
+  <script src="scripts/form.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&family=Open+Sans&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <title>Join the Mendoza Chamber of Commerce</title>
+</head>
+<body>
+  <header>
+    <img src="images/logo.jpg" alt="profile">
+    <div class="branding">
+      <span class="name">Mendoza</span>
+      <p class="subtitle">Chamber of Commerce</p>
+    </div>
+    <button id="myButton"></button>
+  </header>
+
+  <nav id="animateme">
+    <ul class="menuLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li class="current-menu-item"><a href="join.html">Join</a></li>
+      <li><a href="discover.html">Discover</a></li>
+    </ul>
+  </nav>
+
+   <main>
+  <h1>Mendoza Chamber of Commerce</h1>
+  <form method="get" action="thankyou.html">
+    <label>
+      First Name:
+      <input type="text" name="nombre" title="Applicant's first name" required autocomplete="given-name" />
+    </label>
+
+    <label>
+      Last Name:
+      <input type="text" name="apellido" title="Applicant's last name" required autocomplete="family-name" />
+    </label>
+
+    <label>
+      Organizational Title:
+      <input type="text" name="titulo" title="Applicant's organizational title" pattern="[A-Za-z\s\-]{7,}" autocomplete="organization-title" />
+    </label>
+
+    <label>
+      Email Address:
+      <input type="email" name="email" title="Email address" required autocomplete="email" placeholder="example@email.com" />
+    </label>
+
+    <label>
+      Mobile Phone:
+      <input type="tel" name="telefono" title="Mobile phone number" required autocomplete="tel" />
+    </label>
+
+    <label>
+      Company or Organization:
+      <input type="text" name="empresa" title="Company or organization name" required autocomplete="organization" />
+    </label>
+
+    <label>
+      Membership Level:
+      <select name="membresia" title="Membership level" required>
+        <option value="" disabled selected>Select an option</option>
+        <option value="np">NP (Nonprofit - Free)</option>
+        <option value="bronce">Bronze</option>
+        <option value="plata">Silver</option>
+        <option value="oro">Gold</option>
+      </select>
+    </label>
+
+    <label>
+      Company Description:
+      <textarea name="descripcion" title="Company or organization description"></textarea>
+    </label>
+
+    <input type="hidden" name="timestamp" id="timestamp" />
+
+    <input type="submit" value="Submit Form" />
+  </form>
+
+  <!-- Membership cards -->
+  <section class="membresias">
+    <article class="card np">
+      <h3>NP</h3>
+      <p>Free for nonprofit organizations.</p>
+      <a href="#modal-np">Learn more</a>
+    </article>
+    <article class="card bronce">
+      <h3>Bronze</h3>
+      <p>Ideal for small businesses.</p>
+      <a href="#modal-bronce">Learn more</a>
+    </article>
+    <article class="card plata">
+      <h3>Silver</h3>
+      <p>Includes event access and advertising.</p>
+      <a href="#modal-plata">Learn more</a>
+    </article>
+    <article class="card oro">
+      <h3>Gold</h3>
+      <p>Maximum benefits and promotions.</p>
+      <a href="#modal-oro">Learn more</a>
+    </article>
+  </section>
+
+  <!-- Modal windows -->
+  <div id="modal-np" class="modal">
+    <div class="modal-content">
+      <h3>NP Membership</h3>
+      <p>Basic access to community events and networking.</p>
+      <a href="#">Close</a>
+    </div>
+  </div>
+
+  <div id="modal-bronce" class="modal">
+    <div class="modal-content">
+      <h3>Bronze Membership</h3>
+      <p>Includes access to newsletters and featured listings.</p>
+      <a href="#">Close</a>
+    </div>
+  </div>
+
+  <div id="modal-plata" class="modal">
+    <div class="modal-content">
+      <h3>Silver Membership</h3>
+      <p>Training, networking events, and discounts.</p>
+      <a href="#">Close</a>
+    </div>
+  </div>
+
+  <div id="modal-oro" class="modal">
+    <div class="modal-content">
+      <h3>Gold Membership</h3>
+      <p>Top-tier benefits: promotions, premium events, and more.</p>
+      <a href="#">Close</a>
+    </div>
+  </div>
+</main>
+
+
+  <footer>
+    <div class="footer-left">
+      WDD231 Project<br>
+      Azul Nuarte<br>
+      Mendoza Chamber of Commerce<br>
+      +54 9 261 5012310
+    </div>
+
+    <div class="footer-center">
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><img src="images/faceicon.png" alt="Facebook"></a>
+        <a href="https://twitter.com" target="_blank"><img src="images/twicon.png" alt="Twitter"></a>
+        <a href="https://instagram.com" target="_blank"><img src="images/igicon.png" alt="Instagram"></a>
+      </div>
+    </div>
+
+    <div class="footer-right">
+      <p id="last-modified"></p>
+      <p id="year">&copy; <span id="copyright-year"></span></p>
+    </div>
+  </footer>
+</body>
+</html>
