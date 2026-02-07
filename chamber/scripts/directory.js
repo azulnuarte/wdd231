@@ -1,72 +1,57 @@
-const url = "scripts/members.json";
-const container = document.getElementById("business-list");
+const membersContainer = document.querySelector("#members");
+const gridButton = document.querySelector("#grid");
+const listButton = document.querySelector("#list");
+const menuButton = document.querySelector("#myButton");
+const navigation = document.querySelector("#navigation");
 
+/* MENU */
+menuButton.addEventListener("click", () => {
+  navigation.classList.toggle("open");
+});
+
+/* LAST MODIFIED */
+document.querySelector("#last-modified").textContent =
+  `Last Modified: ${document.lastModified}`;
+
+document.querySelector("#copyright-year").textContent =
+  new Date().getFullYear();
+
+/* MEMBERS */
 async function getMembers() {
-  const response = await fetch(url);
-  const data = await response.json();
-  displayMembers(data);
+  const response = await fetch("data/members.json");
+  const members = await response.json();
+  displayMembers(members);
 }
 
 function displayMembers(members) {
-  container.innerHTML = "";
+  membersContainer.innerHTML = "";
+
   members.forEach(member => {
-    let card = document.createElement("section");
+    const card = document.createElement("section");
     card.classList.add("member-card");
 
     card.innerHTML = `
-      <img src="${member.image}" alt="${member.name} logo" loading="lazy">
-     <div class="member-info">
-        <h3>${member.name}</h3>
-        <p><strong>Address:</strong> ${member.address}</p>
-        <p><strong>Phone:</strong> ${member.phone}</p>
-        <a href="${member.website}" target="_blank">Visit Website</a>
-        <p class="membership">${getMembershipLabel(member.membership)}</p>
-      </div>
+      <img src="images/${member.image}" alt="${member.name} logo">
+      <h2>${member.name}</h2>
+      <p>${member.address}</p>
+      <p>${member.phone}</p>
+      <a href="${member.website}" target="_blank">Visit Website</a>
+      <p class="membership">${member.membership} Member</p>
     `;
 
-    container.appendChild(card);
+    membersContainer.appendChild(card);
   });
 }
 
-function getMembershipLabel(level) {
-  switch(level) {
-    case 1: return "Bronze";
-    case 2: return "Silver";
-    case 3: return "Gold";
-    default: return "Member";
-  }
-  }
-
-document.getElementById("grid-view").addEventListener("click", () => {
-  container.classList.add("grid");
-  container.classList.remove("list");
+gridButton.addEventListener("click", () => {
+  membersContainer.classList.add("grid");
+  membersContainer.classList.remove("list");
 });
 
-document.getElementById("list-view").addEventListener("click", () => {
-  container.classList.add("list");
-  container.classList.remove("grid");
+listButton.addEventListener("click", () => {
+  membersContainer.classList.add("list");
+  membersContainer.classList.remove("grid");
 });
 
 getMembers();
-
-const yearSpan = document.getElementById("copyright-year");
-if (yearSpan) {
-  const currentYear = new Date().getFullYear();
-  yearSpan.textContent = currentYear;
-}
-
-const lastModifiedParagraph = document.getElementById("last-modified");
-if (lastModifiedParagraph) {
-  lastModifiedParagraph.textContent = `Last Modified: ${document.lastModified}`;
-}
-
-const hamburgerElement = document.querySelector('#myButton');
-const navElement = document.querySelector('#animateme');
-if (hamburgerElement && navElement) {
-  hamburgerElement.addEventListener('click', () => {
-    navElement.classList.toggle('open');
-    hamburgerElement.classList.toggle('open');
-  });
-}
-
 

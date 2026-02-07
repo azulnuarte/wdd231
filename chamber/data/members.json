@@ -1,0 +1,59 @@
+[
+  {
+    "name": "Bodega Andina",
+    "address": "Ruta 60, Luján de Cuyo, Mendoza",
+    "phone": "+54 261 555 1001",
+    "website": "https://bodegaandina.com",
+    "image": "bodega.jpg",
+    "membership": "Gold"
+  },
+  {
+    "name": "Café Alameda",
+    "address": "Av. San Martín 850, Mendoza",
+    "phone": "+54 261 555 1002",
+    "website": "https://cafealameda.com",
+    "image": "cafealameda.jpg",
+    "membership": "Silver"
+  },
+  {
+    "name": "Andes Realty",
+    "address": "Belgrano 1200, Mendoza",
+    "phone": "+54 261 555 1003",
+    "website": "https://andesrealty.com",
+    "image": "andesre.webp",
+    "membership": "Gold"
+  },
+  {
+    "name": "Aconcagua Fitness",
+    "address": "Las Heras 640, Mendoza",
+    "phone": "+54 261 555 1004",
+    "website": "https://aconcaguafitness.com",
+    "image": "aconfit.jpg",
+    "membership": "Bronze"
+  },
+  {
+    "name": "Sol del Oeste Panadería",
+    "address": "Godoy Cruz 430, Mendoza",
+    "phone": "+54 261 555 1005",
+    "website": "https://soldeloestepanaderia.com",
+    "image": "panaderia.webp",
+    "membership": "Silver"
+  },
+  {
+    "name": "Cuyo Consulting",
+    "address": "Patricias Mendocinas 980, Mendoza",
+    "phone": "+54 261 555 1006",
+    "website": "https://cuyoconsulting.com",
+    "image": "cuyo.jpg",
+    "membership": "Gold"
+  },
+  {
+    "name": "Viento Zonda Media",
+    "address": "Colón 300, Mendoza",
+    "phone": "+54 261 555 1007",
+    "website": "https://vientozondamedia.com",
+    "image": "vientozon.png",
+    "membership": "Bronze"
+  }
+]
+

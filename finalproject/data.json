@@ -5,10 +5,12 @@
     "alt": "Argentinian flag",
     "description": "The Argentine flag was created by Manuel Belgrano on February 27, 1812, during the struggle for independence. It was inspired by the colors of the national cockade: light blue and white, symbolizing the sky and the fight for freedom. It was hoisted for the first time on the banks of the Paraná River, in the city of Rosario. It was officially adopted as the national flag in 1816, and in 1818 the sun was added in the center, called Sol de Mayo, symbol of freedom and the birth of a new nation."
   },
-  "diameter": {
-    "title": "Diameter",
-    "description": "The maximum diameter of Argentina, considering the greatest distance in a straight line within the continental territory, is approximately 3,700 km:\n\nFrom north to south (from La Quiaca, Jujuy to Cape San Pío, Tierra del Fuego): about 3,650 km.\nFrom east to west (from the province of Misiones to the Andes mountain range in Mendoza or San Juan): about 1,400 km.\n\nThis vast territory makes Argentina the eighth largest country in the world and the second largest in South America, after Brazil."
-  },
+
+ "diameter": {
+  "description": "The maximum diameter of Argentina, considering the greatest distance in a straight line within the continental territory, is approximately 3,700 km:\n\nFrom north to south (from La Quiaca, Jujuy to Cape San Pío, Tierra del Fuego): about 3,650 km.\nFrom east to west (from the province of Misiones to the Andes mountain range in Mendoza or San Juan): about 1,400 km.\n\nThis vast territory makes Argentina the eighth largest country in the world and the second largest in South America, after Brazil."
+},
+
+
   "typicalDrinks": [
     {
       "name": "Mate",
@@ -27,8 +29,15 @@
       "image": "images/submarino.jpg",
       "alt": "Submarino drink",
       "description": "The submarine is an Argentine drink made with hot milk and a chocolate bar that melts when submerged, forming a sweet and creamy infusion. It emerged as a fun way to drink chocolate milk, popular among young and old."
+    },
+    {
+      "name": "Caña con ruda",
+      "image": "images/canaruda.webp",
+      "alt": "Small glass bottle of caña con ruda with herbs inside",
+      "description": "Caña con ruda is a traditional Argentine drink made by infusing cane liquor with ruda (rue herb). It is consumed especially on August 1st in the northern provinces as a ritual to ward off illness and attract health and good luck. It carries deep cultural and ancestral significance."
     }
   ],
+
   "typicalDances": [
     {
       "name": "Chacarera",
@@ -46,21 +55,22 @@
       "name": "Cueca",
       "image": "images/cueca.jpg",
       "alt": "Cueca dance",
-      "description": "The cueca is a traditional dance shared by several countries of the Southern Cone. In Argentina, especially in Cuyo, it is danced with handkerchief and footwork, showing Hispanic-American heritage and regional spirit."
+      "description": "The cueca is a traditional dance shared by several countries of the Southern Cone. In Argentina, especially in Cuyo, it is danced with handkerchief and footwork, showing Hispanic‑American heritage and regional spirit."
     },
     {
       "name": "Gato",
-      "image": "images/gato.jpg",
+      "image": "images/gato.webp",
       "alt": "Gato dance",
       "description": "The gato is a popular Argentine dance with an agile and festive rhythm. It is danced in couples with footwork and turns, and has colonial roots, being one of the oldest Creole dances in the country."
     }
   ],
+
   "typicalFood": [
     {
       "name": "Asado",
       "image": "images/asado.jpg",
       "alt": "Asado dish",
-      "description": "Asado is the Argentinean culinary tradition par excellence, based on the grill where beef is cooked slowly over a fire. It was first eaten by the gauchos in the pampas and today it is a symbol of reunion and celebration."
+      "description": "Asado is the Argentine culinary tradition par excellence, based on the grill where beef is cooked slowly over a fire. It was first eaten by the gauchos in the pampas and today it is a symbol of reunion and celebration."
     },
     {
       "name": "Empanadas",
@@ -72,26 +82,26 @@
       "name": "Locro",
       "image": "images/locro.jpg",
       "alt": "Locro dish",
-      "description": "Locro is a thick and nutritious stew made with corn, pumpkin, meat and legumes. It has pre-Columbian indigenous roots and is consumed especially on national holidays as a symbol of national identity."
+      "description": "Locro is a thick and nutritious stew made with corn, pumpkin, meat and legumes. It has pre‑Columbian indigenous roots and is consumed especially on national holidays as a symbol of national identity."
     },
     {
       "name": "Matambre a la pizza",
       "image": "images/malp.jpg",
       "alt": "Matambre a la pizza dish",
-      "description": "Matambre a la pizza is an Argentinean dish that combines a thin cut of meat (matambre) with tomato sauce, cheese and oregano, au gratin pizza style. It is a fusion of the Argentine tradition with the Italian influence in the local gastronomy."
+      "description": "Matambre a la pizza is an Argentine dish that combines a thin cut of meat (matambre) with tomato sauce, cheese and oregano, au gratin pizza style. It is a fusion of the Argentine tradition with the Italian influence in the local gastronomy."
     }
   ],
+
  "culture": {
   "anthem": {
     "title": "National Argentinian Anthem",
     "video": {
-      "url": "https://www.youtube.com/embed/0XK5NnP1U_0",
+      "url": "https://www.youtube.com/embed/8V7M5f1z27I?si=kvAcHzSh3HBUp7oG",
       "width": 560,
       "height": 315,
       "allow": "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
       "allowfullscreen": true
-    }
-  }
+     }
+   }
+ }
 }
-}
-    

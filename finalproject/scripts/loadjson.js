@@ -65,6 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
     container.appendChild(section);
   }
 
+
   // ✅ Himno
   function displayAnthem(anthemData, container) {
     const section = document.createElement("section");

@@ -1,131 +1,37 @@
-@media only screen and (min-width:38rem) {
-  #myButton {
-    display: none;
+.info-sections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1rem;
   }
-
-  ul.menuLinks, ul.menuLinks.open {
-    display: flex;
-    justify-content: flex-end;
+  
+  .info-sections section {
+    background-color: #e6e6e6;
+    padding: 1rem;
+    border-radius: 6px;
   }
-
-  nav {
-    grid-template-rows: 1fr;
-  }
-
-  #business-list.grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media only screen and (min-width: 64rem) {
-    #business-list.grid {
-      grid-template-columns: repeat(3, 1fr);
+  @media (max-width: 768px) {
+    .info-sections {
+      grid-template-columns: 1fr;
     }
   }
+    
 
-  #business-list.list {
-    display: flex;
-    flex-direction: column;
+  .info-sections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-  }
-
-  .member-card {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  #business-list.list .member-card {
-    flex-direction: row;
-    align-items: center;
-    text-align: left;
     padding: 1rem;
   }
-
-  #business-list.list .member-card img {
-    width: 120px;
-    height: auto;
-    margin-right: 1rem;
-  }
-
-  #business-list.list .member-info {
-    flex: 1;
-  }
-}
-@media only screen and (min-width: 64rem) {
-  #weather,
-  #events {
-    padding: 2rem;
-    font-size: 1.1rem;
-  }
-
-  #weather p,
-  #events li {
-    font-size: 1.1rem;
-  }
-}
-@media (min-width: 38rem) {
-  #spotlights .spotlight-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 64rem) {
-  #spotlights .spotlight-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (min-width: 64rem) {
-  .weather-events-container {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-  }
-
-  #events {
-    flex: 3;
-  }
-
-  #weather {
-    flex: 1.5;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 2rem;
-  }
-
   
-  #forecast {
-    flex: 1.5;
-  }
-
-  #weather p,
-  #forecast p {
-    font-size: 1.1rem;
-  }
-
-  .hero-content {
-    align-items: flex-end;
-    text-align: right;
-    padding: 0 3rem 3rem 0;
-  }
-  #forecast {
-    background-color: #f2f2f2;
+  .info-sections section {
+    background-color: #f4f6f8;
     padding: 1rem;
     border-radius: 8px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   }
-}
-
-@media (min-width: 64rem) {
-  #weather {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 2rem;
+  @media (max-width: 768px) {
+    .info-sections {
+      grid-template-columns: 1fr;
+    }
   }
-
   
-}
-

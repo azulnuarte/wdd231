@@ -1,0 +1,214 @@
+/* =======================
+   GENERAL
+======================= */
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin: 0;
+  color: #222;
+}
+
+header,
+footer {
+  background-color: darkgreen;
+  color: white;
+  padding: 1rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+/* =======================
+   LOGO & SITE NAME
+======================= */
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+.site-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* =======================
+   NAVIGATION
+======================= */
+.menuLinks {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.menuLinks a {
+  color: white;
+  text-decoration: none;
+}
+
+.menuLinks a.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* =======================
+   HAMBURGER BUTTON
+======================= */
+#myButton {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* =======================
+   HERO
+======================= */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+  object-fit: cover;
+}
+
+.hero h1 {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+
+/* =======================
+   DIRECTORY
+======================= */
+.view-toggle {
+  text-align: center;
+  margin: 1rem;
+}
+
+.view-toggle button {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+#members.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+#members.list {
+  display: block;
+  padding: 1rem;
+}
+
+.member-card {
+  background-color: #dfe7f5;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#members.list .member-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  text-align: left;
+  padding: 10px;
+  border: solid #8491a3;
+}
+
+#members.list img {
+  display: none;
+}
+
+.member-card img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.membership {
+  font-weight: bold;
+}
+
+/* =======================
+   FOOTER
+======================= */
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.social-icons img {
+  width: 24px;
+  margin: 0 0.5rem;
+}
+
+/* =======================
+   MOBILE
+======================= */
+@media (max-width: 768px) {
+  #myButton {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+  }
+
+  nav.open {
+    display: block;
+  }
+
+  .menuLinks {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+
+
+.info-sections {
+  display: flex;
+  gap: 20px;
+}
+
+.events,
+.weather {
+  flex: 1;
+  background-color: #f4f6f8;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+/* BOTÓN */
+.cta {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #1e3a5f;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
